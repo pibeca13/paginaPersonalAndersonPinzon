@@ -1,0 +1,21 @@
+*{margin:0 ;padding: 0;box-sizing: border-box;}
+.galeria{width: 100%;
+    display: grid;grid-template-columns: repeat(3,0.5fr);
+grid-template-rows:1fr 1fr 1fr ;}
+.galeriaDeimagenes{width: 100%;position: relative;cursor: pointer;overflow: hidden;}    
+.imagen{width: 100%;padding: 5%;}
+.galeriaDeimagenes::before{content:"Imagen";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:#cececea6;
+    transform: scaleY(0);
+    transition: transform .4s;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+    font-size:1.5rem ;}
+.galeriaDeimagenes:hover::before{transform: scaleY(1);}

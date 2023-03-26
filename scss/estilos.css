@@ -1,0 +1,310 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Tilt+Warp&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: url(../IMG/fondo5.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+nav {
+  color: aliceblue;
+}
+
+.colorNav {
+  color: aliceblue;
+}
+
+.nav-item {
+  padding: 1%;
+}
+
+.card-img {
+  display: flex;
+  width: 55%;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo {
+  font-size: 70px;
+  padding: 5%;
+}
+
+.subtitulo {
+  font-size: 25px;
+}
+
+.cuerpo {
+  display: flex;
+  width: 51%;
+  height: auto;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-recuadro {
+  background-color: rgb(134, 134, 134);
+  color: aliceblue;
+}
+
+.card {
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+.titulo2 {
+  font-size: 50px;
+  padding: 3%;
+}
+
+.subtitulo2 {
+  font-size: 20px;
+}
+
+.card-body2 {
+  background-color: rgb(97, 97, 97);
+  color: aliceblue;
+  padding: 4%;
+}
+
+.tercerBloque {
+  width: 100%;
+  height: 100%;
+}
+
+.experienciaBtl {
+  font-size: 25px;
+  font-family: "Shantell Sans", cursive;
+}
+
+.card-textBTL {
+  font-size: 40px;
+}
+
+.card-header {
+  height: 50px;
+}
+
+.btn-boton2 {
+  background-color: aliceblue;
+}
+
+.carruseles {
+  display: flex;
+}
+
+.d-block {
+  width: 100%;
+}
+
+.cierre {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+
+.logoinferior {
+  width: 15%;
+  height: auto;
+}
+
+.nav {
+  width: 100%;
+  align-items: center;
+}
+
+.nav-link {
+  color: black;
+  font-size: 20px;
+}
+
+.fa-brands {
+  width: 5%;
+  height: auto;
+}
+
+.CierreAbajo {
+  background-color: black;
+}
+
+.diseñadorindustrial {
+  color: aliceblue;
+  padding: 1%;
+  justify-content: center;
+  text-align: center;
+}
+
+.copyright {
+  color: aliceblue;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 1%;
+  align-items: center;
+  display: flex;
+  background-color: rgb(117, 117, 117);
+}
+
+.nav-link:hover {
+  color: rgb(255, 0, 0);
+}
+
+.proyectosImagenes {
+  display: flex;
+  width: 100%;
+  padding: 3%;
+  margin: 2%;
+}
+
+.carousel-item {
+  padding: 2%;
+}
+
+.card3 {
+  padding: 2%;
+  margin-right: 5%;
+}
+
+.subtitulo3 {
+  font-size: 25px;
+  line-height: normal;
+  text-align: justify;
+}
+
+.go {
+  width: 50%;
+  margin-left: 4%;
+  display: flex;
+}
+
+.sub {
+  font-size: 230%;
+  margin-left: 4%;
+}
+
+.casilla {
+  font-size: 140%;
+  width: 20%;
+  margin-left: 4%;
+  display: inline;
+}
+
+.formularios {
+  width: 40%;
+  padding-left: 10%;
+}
+
+.cuadroDialogo {
+  display: flex;
+}
+
+.btn-dark {
+  background-color: rgb(82, 81, 81);
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+}
+
+.btn2 {
+  color: aliceblue;
+  justify-content: center;
+  background-color: rgb(138, 138, 138);
+}
+
+.clientes {
+  font-size: 200%;
+  text-align: center;
+  padding: 2%;
+  line-height: normal;
+}
+
+.logosMarcas {
+  width: 20%;
+  display: flex;
+  margin: 4%;
+}
+
+.img-thumbnail {
+  padding: 3%;
+  margin: 10%;
+}
+
+.bloque01 {
+  display: flex;
+  justify-content: center;
+}
+
+.img-thumbnail01 {
+  width: 25%;
+  padding: 4%;
+}
+
+.card50 {
+  padding: 5%;
+  font-size: 170%;
+}
+
+.card-title50 {
+  font-size: 200%;
+}
+
+.btn-oscuro {
+  background-color: black;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 500px) {
+  .card-img {
+    display: block;
+    width: 100%;
+  }
+  .cuerpo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .carruseles {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .encabezado {
+    display: block;
+  }
+  .logoinferior {
+    display: none;
+  }
+  .experienciaBtl {
+    font-size: 90%;
+  }
+  .card-textBTL {
+    font-size: 200%;
+  }
+  .footer {
+    align-items: center;
+    justify-content: center;
+  }
+  .fa-brands {
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+  .carouselExampleControlsNoTouching {
+    width: 100%;
+    display: flex;
+  }
+  .proyectosImagenes {
+    display: block;
+  }
+}/*# sourceMappingURL=estilos.css.map */

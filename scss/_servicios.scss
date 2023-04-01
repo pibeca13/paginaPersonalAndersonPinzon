@@ -1,0 +1,194 @@
+.ServiciosBloque01{
+  display: $contenedor-flex;
+  justify-content: $justify-center;
+  .bloqueSuperior{
+    padding-top: 5%;
+    padding-left: 25%;
+    width: 60%;
+    .tituloImagenCorporativa{
+      font-size: 50px;
+      width: 100%;
+    }
+    .textoImagenCorporativa{
+      font-size: 25px;
+      width: 80%;
+    }
+    .iconoFlecha2{
+      width: 10%;
+       font-size: 60px;
+       color:$color-cuerto ;
+       padding-left: 40%;
+       padding-top: 3%;
+       &:hover{
+        color:$color-rojo;
+       }
+      }  
+  }
+  .imagenCorporatica{
+   width:15%;
+    padding-top: 4%;
+    margin-right: 25%;
+    transition: all 1s;
+    &:hover{
+      width: 20%;
+    transition: all 1s;     
+      
+    }
+  }
+  
+}
+
+.ServiciosBloque02{
+  width: 100%;
+  display: $contenedor-flex;
+  background-color: $color-quinto;
+  padding: 4%;
+  .imagenModelado3d{
+    width:20%;
+    margin-left: 25%;
+    height:25%;
+    &:hover{
+      width: 25%;
+      transition: all 1s;
+    }
+  }
+  .bloqueModelado3d{
+    padding-top: 4%;
+    padding-right: 10%;
+    margin-left: 10%;
+    .tituloModelado3d{
+      font-size: 50px;
+      width: 60%;
+      color: $color-secundario;
+      padding-right: 10%;
+      text-align: center;
+    }
+    .textoModelado3d{
+      font-size: 25px;
+      width: 65%;
+      color: $color-secundario;
+    }
+    .iconoFlecha5{
+      width: 10%; 
+      font-size: 60px;
+      color:$color-secundario ;
+      padding-left: 40%;
+      padding-top: 3%;
+      &:hover{
+        color:$color-rojo;
+      }
+    }
+  }
+}
+
+.ServicosBloque03{
+  display: $contenedor-flex;
+  .bloqueInferior{
+    padding-top: 5%;
+    padding-left: 25%;
+    width: 60%;
+    .tituloCreacionProyectos{
+      font-size: 50px;
+      width: 100%;
+    }
+    .textoCreacionProyectos{
+      font-size: 25px;
+      width: 80%;
+    }
+    .iconoFlecha4{
+      width: 10%;
+       font-size: 60px;
+       color:$color-cuerto ;
+       padding-left: 40%;
+       padding-top: 3%;
+       &:hover{
+        color:$color-rojo;
+      }       
+      }
+  }
+  .imagenXbox{
+    width:15%;
+    padding-top: 4%;
+    margin-right: 25%;
+    &:hover{width: 20%;
+      transition: all 1s;}
+  }
+}
+
+
+    
+ @media screen and (max-width: 500px){
+  
+    .ServiciosBloque01{
+      display: inline-block;
+      .bloqueSuperior{
+        width: 100%;
+        .tituloImagenCorporativa{
+
+        }
+        .textoImagenCorporativa{
+
+        }
+        .iconoFlecha2{
+
+        }       
+        }
+        .imagenCorporatica{
+          width: 100%;
+          transition: none;
+          &:hover{
+            width: 100%;
+          }
+      }
+    }
+   
+    .ServiciosBloque02{
+      display: inline-block;
+      .imagenModelado3d{
+        width: 110%;
+        margin-left: -5%;
+        &:hover{
+          width: 110%;
+          transition: none;
+        }
+        .bloqueModelado3d{
+          width: 100%;
+          
+          .tituloModelado3d{
+            width: 100%;
+          }
+          .textoModelado3d{
+            width: 100%;
+            padding-left: 4%;
+          }
+          .iconoFlecha5{            
+          }
+        }
+      }
+    } 
+    
+    .ServicosBloque03{
+      display: inline-block;
+      .bloqueInferior{
+        width: 100%;
+        .tituloCreacionProyectos{
+
+        }
+        .textoCreacionProyectos{
+
+        }
+        .iconoFlecha4{
+
+        }
+      }
+      .imagenXbox{
+        width: 100%;
+        transition: none;
+        &:hover{
+          width: 100%;
+        }
+      }  
+    }  
+  
+  }
+  

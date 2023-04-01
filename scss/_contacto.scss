@@ -1,0 +1,119 @@
+main{
+    .tituloContactos{font-size: 400%;
+        padding-top: 5%;
+        padding-left: 15%;width: 100%;
+        height: 10%;}
+        .encabezadoContactos{
+            display: $contenedor-flex;
+            .parrafoContactos{
+                font-size: 20px;
+                line-height: 40px;
+                font-family: 'Lato', sans-serif;
+                text-align: start;width: 60%;
+                display: $contenedor-flex;
+                padding-left: 15%;
+            }
+            
+.imagenPersonal{
+    width: 30rem;
+    padding-left: 20%;
+}
+        }
+
+        .seccionMediaContacto{
+            background-color:$color-cuerto;
+            color:$color-secundario;
+            padding: 3%;display: $contenedor-flex;
+            .EnQueteAyudo{
+                font-family:$fuente-general;
+                padding-left: 13%;padding-top: 7%;
+            }
+            .cuadroDialogo{
+                width: 30%;
+                .casilla{
+                    font-size: 140%;
+                    padding-left: 13%;
+                }
+            }
+            .formularios{width: 40%;
+                padding-right: 10%
+                ;}
+                .botonEnviar{
+                    .btn-dark{
+                        background-color:$color-cuerto;
+                        justify-content: $justify-center;
+                    }
+
+
+                }
+        }        
+        
+        .mapa{
+            @include flexible(center,center);          
+        }
+}
+
+
+
+
+@media screen and (max-width: 500px){
+    main{
+        .tituloContactos{
+            padding-left: 20%;
+        }
+        .encabezadoContactos{
+            display: inline;
+            .parrafoContactos{
+                width: 90%;
+                margin-right: 10%;
+                text-align: center;
+            }
+            .imagenPersonal{
+                width: 100%;
+                padding-right: 10%;
+            }
+        }
+        .seccionMediaContacto{
+            width: 100%;
+            background-color: $color-cuerto;
+            display: block;
+            .EnQueteAyudo{
+                padding-left: 27%;
+            }
+            .cuadroDialogo{
+                width: 100%;
+                padding-left: 15%;
+                .casilla{
+
+                }
+            }
+            .formularios{
+                width: 100%;
+                padding-left: 10%;
+                .mb-3{
+                    .form-label{
+                        padding-left: 42%;
+                    } 
+
+                }
+                .botonEnviar{
+                    padding-left: 41%;
+                }
+            }
+        }
+
+    } 
+   
+    
+    
+    
+    
+    
+       
+    
+    
+}
+
+
+
+

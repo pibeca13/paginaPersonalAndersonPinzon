@@ -1,0 +1,20 @@
+.portafolio{
+    display: $contenedor-flex;
+    overflow: hidden;
+    .movimientoPorta{
+        width: 400%;
+        height: auto;
+
+        animation-name: galeriaPrincipal;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;       
+        
+        }
+}
+
+
+@keyframes galeriaPrincipal {
+    0% {transform: translate(0);}   
+    100% {transform: translate(-50%);}
+}
+

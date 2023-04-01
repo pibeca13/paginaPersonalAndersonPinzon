@@ -1,0 +1,79 @@
+main{
+    .encabezado{
+        display:$contenedor-flex;
+        justify-content: space-between;
+        .titulo{
+            font-size: 70px;
+            padding: 5%;width: 40%;
+            .subtitulo{
+                font-size: 25px;
+                line-height: 40px;
+                font-family: 'Lato', sans-serif;
+            }
+        }
+        .card-img2{
+            display: $contenedor-flex;
+            width: 55%;margin-left: -55%;}
+    }
+    .titulo2{font-size: 50px;
+        padding: 5%;
+        .subtitulo2{
+            font-size: 25px;
+            line-height: 40px;
+            font-family: 'Lato', sans-serif;
+        }
+    }
+    .franja{
+        background-color: $color-secundario;
+        .cuerpo{
+            display: $contenedor-flex;
+            width: 51%;height: auto;
+            text-align: center;color: $color-primario;
+            background-color: $color-secundario;
+            .col-sm-6{
+                .card{
+                    border: none;
+                    background-color: $color-secundario;
+                    height: 10%;margin-top: 3%;
+                    .card-body{
+                        margin-left: 15%;
+                        margin-right: 15%;
+                        margin-top: 4%;
+                    }
+                }
+                
+            }
+        }
+    }    
+    .iconoFlecha{
+        width: 10%;
+         font-size: 60px;
+         color:$color-cuerto ;
+         &:hover{
+            color:$color-rojo;
+        }
+        }
+        
+.iconoFlecha3{
+    font-size: 60px;
+    color:$color-secundario;
+    display: $contenedor-flex;
+    text-decoration: none;padding-left: 2%;
+    padding-top: -2%;
+    &:hover{
+        color:$color-rojo;
+    }
+}
+.cardDesarrollo{
+    padding: 3%;
+    .card-title{
+        font-size: 25px;
+        padding: 3%;
+    }
+    .card-textF{
+        font-size: 17px;
+    }
+} 
+  
+    
+}

@@ -1,0 +1,73 @@
+.pieDepagina{
+    .cierre{
+        display: $contenedor-flex;
+        background-color: $color-secundario;
+        .logoinferior{
+            width: 15%;
+            height: auto;
+        }
+    }
+    
+.nav{
+    width: 100%;
+    align-items: $align-items;
+    .nav-item{
+        padding-left: 3%;
+        .nav-link2{
+            text-decoration: none;
+            color: $color-quinto;
+            font-size: 130%;width: 50%;
+            &:hover{
+                color:$color-facebook;
+            }
+        }
+        .nav-link{
+            color:$color-primario;
+            font-size: 20px;
+        }
+    }
+    .redesSociales{
+        display: flex;
+        width: 20%;
+        justify-content: space-around;
+        margin-left: 5%;
+        .iconotamaño{
+            display: $contenedor-flex;
+            justify-content: space-around;
+            width: 10%;color:$color-cuerto;
+            font-size: 60px;text-decoration: none;
+            .fa-instagram{
+                &:hover{
+                    color:map-get($redes, instagram);
+                }
+            }
+            .fa-whatsapp{
+                &:hover{
+                    color:map-get($redes, whassap);
+                }
+
+            }
+            .fa-facebook{
+                &:hover{
+                    color:map-get($redes,  facebook);
+                }
+            }
+
+        }
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

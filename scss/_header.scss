@@ -1,0 +1,172 @@
+header{
+    .container-fluid{
+        width: 100%;
+        height: 1%;align-items: $align-items;
+        display: $contenedor-flex;
+        background-color: $color-cuerto;
+        font-size: 20px;}
+}
+
+nav{
+    color: $color-secundario;
+    .nav-link{width: 100%;              
+        &:hover{
+            background-color:$color-primario;
+                       
+
+        }
+
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    main{
+        .encabezado{
+            display: block;
+            .titulo{width: 100%;
+                font-size: 50px;
+                .subtitulo{
+                }
+            }
+            .card-img2{
+                display: block;
+                width: 155%;
+            }
+        }
+        .titulo2{width: 100%;
+            font-size: 45px;
+            text-align: center;
+            .subtitulo2{
+    
+            }
+        }
+        .franja{
+            .cuerpo{
+                display: block;
+                width: 100%;
+                height: auto;
+                .col-sm-6{
+                    .card{
+                        .card-body{
+                            .card-title{
+    
+                            }
+                            .card-text{
+    
+                            }
+                            .iconoFlecha{
+    
+                            }
+    
+                        }
+    
+                    }
+    
+                }
+    
+            }
+    
+        }
+        .col-sm-6{
+            .cardDesarrollo{
+                .card-body{
+                    .card-title{
+    
+                    }
+                    .card-text{
+    
+                    }
+                    .iconoFlecha{
+    
+                    }
+    
+                }
+    
+            }
+    
+        }
+        .tercerBloque{
+            .card text{
+                .card-body2{
+                    .experienciaBtl{
+                        font-size: 90%;
+                    }
+                    .card-textBTL{
+                        font-size: 200%;
+    
+                    }
+    
+                }
+    
+            }
+    
+        }
+        .portafolio{
+            .movimientoPorta{
+    
+            }
+    
+        }
+        
+    }
+    .pieDepagina{
+        align-items: center;
+            justify-content: center;
+        .cierre{
+            .logoinferior{
+                display: none;
+            }
+            .nav{
+                .nav-item{
+                    .nav-link2{
+    
+                    }
+    
+                }
+                .nav-item{
+                    .nav-link{
+                            
+                    }
+    
+                }
+                .redesSociales{
+                    display: flex;
+                    width: 100%;
+                    .iconotamaño{
+                        width: 30%;
+                            display: flex;
+                        .fa-brands{
+                            padding: 5%;
+                            align-items: center;
+                            justify-content: center;
+    
+                        }
+    
+                    }
+    
+                }
+    
+            }
+    
+        }
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+

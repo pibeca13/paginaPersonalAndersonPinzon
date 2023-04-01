@@ -13,38 +13,106 @@ body {
   width: 100%;
 }
 
-nav {
-  color: aliceblue;
-}
-
-.colorNav {
-  color: aliceblue;
-}
-
-.nav-item {
-  padding: 1%;
-}
-
-.card-img {
+header .container-fluid {
+  width: 100%;
+  height: 1%;
+  align-items: center;
   display: flex;
-  width: 55%;
+  background-color: rgb(133, 133, 133);
+  font-size: 20px;
 }
 
-.encabezado {
+nav {
+  color: rgb(255, 255, 255);
+}
+nav .nav-link {
+  width: 100%;
+}
+nav .nav-link:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 500px) {
+  main .encabezado {
+    display: block;
+  }
+  main .encabezado .titulo {
+    width: 100%;
+    font-size: 50px;
+  }
+  main .encabezado .card-img2 {
+    display: block;
+    width: 155%;
+  }
+  main .titulo2 {
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+  }
+  main .franja .cuerpo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  main .tercerBloque .card text .card-body2 .experienciaBtl {
+    font-size: 90%;
+  }
+  main .tercerBloque .card text .card-body2 .card-textBTL {
+    font-size: 200%;
+  }
+  .pieDepagina {
+    align-items: center;
+    justify-content: center;
+  }
+  .pieDepagina .cierre .logoinferior {
+    display: none;
+  }
+  .pieDepagina .cierre .nav .redesSociales {
+    display: flex;
+    width: 100%;
+  }
+  .pieDepagina .cierre .nav .redesSociales .iconotamaño {
+    width: 30%;
+    display: flex;
+  }
+  .pieDepagina .cierre .nav .redesSociales .iconotamaño .fa-brands {
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+main .encabezado {
   display: flex;
   justify-content: space-between;
 }
-
-.titulo {
+main .encabezado .titulo {
   font-size: 70px;
   padding: 5%;
+  width: 40%;
 }
-
-.subtitulo {
+main .encabezado .titulo .subtitulo {
   font-size: 25px;
+  line-height: 40px;
+  font-family: "Lato", sans-serif;
 }
-
-.cuerpo {
+main .encabezado .card-img2 {
+  display: flex;
+  width: 55%;
+  margin-left: -55%;
+}
+main .titulo2 {
+  font-size: 50px;
+  padding: 5%;
+}
+main .titulo2 .subtitulo2 {
+  font-size: 25px;
+  line-height: 40px;
+  font-family: "Lato", sans-serif;
+}
+main .franja {
+  background-color: rgb(255, 255, 255);
+}
+main .franja .cuerpo {
   display: flex;
   width: 51%;
   height: auto;
@@ -52,259 +120,570 @@ nav {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
-
-.btn-recuadro {
-  background-color: rgb(134, 134, 134);
-  color: aliceblue;
-}
-
-.card {
+main .franja .cuerpo .col-sm-6 .card {
   border: none;
   background-color: rgb(255, 255, 255);
+  height: 10%;
+  margin-top: 3%;
 }
-
-.titulo2 {
-  font-size: 50px;
+main .franja .cuerpo .col-sm-6 .card .card-body {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 4%;
+}
+main .iconoFlecha {
+  width: 10%;
+  font-size: 60px;
+  color: rgb(133, 133, 133);
+}
+main .iconoFlecha:hover {
+  color: crimson;
+}
+main .iconoFlecha3 {
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  text-decoration: none;
+  padding-left: 2%;
+  padding-top: -2%;
+}
+main .iconoFlecha3:hover {
+  color: crimson;
+}
+main .cardDesarrollo {
   padding: 3%;
 }
-
-.subtitulo2 {
-  font-size: 20px;
+main .cardDesarrollo .card-title {
+  font-size: 25px;
+  padding: 3%;
+}
+main .cardDesarrollo .card-textF {
+  font-size: 17px;
 }
 
-.card-body2 {
-  background-color: rgb(97, 97, 97);
-  color: aliceblue;
-  padding: 4%;
-}
-
-.tercerBloque {
+main .tercerBloque {
   width: 100%;
   height: 100%;
 }
-
-.experienciaBtl {
+main .tercerBloque .card-header {
+  height: 50px;
+}
+main .tercerBloque .card-body2 {
+  background-color: rgb(73, 73, 73);
+  color: rgb(255, 255, 255);
+  padding: 4%;
+}
+main .tercerBloque .card-body2 .experienciaBtl {
   font-size: 25px;
   font-family: "Shantell Sans", cursive;
 }
-
-.card-textBTL {
+main .tercerBloque .card-body2 .card-textBTL {
   font-size: 40px;
 }
-
-.card-header {
-  height: 50px;
-}
-
-.btn-boton2 {
-  background-color: aliceblue;
-}
-
-.carruseles {
+main .tercerBloque .card-body2 .acceso {
   display: flex;
+  justify-content: center;
 }
 
-.d-block {
-  width: 100%;
+.portafolio {
+  display: flex;
+  overflow: hidden;
+}
+.portafolio .movimientoPorta {
+  width: 400%;
+  height: auto;
+  animation-name: galeriaPrincipal;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
 }
 
-.cierre {
+@keyframes galeriaPrincipal {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
+.pieDepagina .cierre {
   display: flex;
   background-color: rgb(255, 255, 255);
 }
-
-.logoinferior {
+.pieDepagina .cierre .logoinferior {
   width: 15%;
   height: auto;
 }
-
-.nav {
+.pieDepagina .nav {
   width: 100%;
   align-items: center;
 }
-
-.nav-link {
-  color: black;
+.pieDepagina .nav .nav-item {
+  padding-left: 3%;
+}
+.pieDepagina .nav .nav-item .nav-link2 {
+  text-decoration: none;
+  color: rgb(73, 73, 73);
+  font-size: 130%;
+  width: 50%;
+}
+.pieDepagina .nav .nav-item .nav-link2:hover {
+  color: rgb(12, 141, 228);
+}
+.pieDepagina .nav .nav-item .nav-link {
+  color: rgb(0, 0, 0);
   font-size: 20px;
 }
-
-.fa-brands {
-  width: 5%;
-  height: auto;
+.pieDepagina .nav .redesSociales {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  margin-left: 5%;
+}
+.pieDepagina .nav .redesSociales .iconotamaño {
+  display: flex;
+  justify-content: space-around;
+  width: 10%;
+  color: rgb(133, 133, 133);
+  font-size: 60px;
+  text-decoration: none;
+}
+.pieDepagina .nav .redesSociales .iconotamaño .fa-instagram:hover {
+  color: rgb(255, 12, 133);
+}
+.pieDepagina .nav .redesSociales .iconotamaño .fa-whatsapp:hover {
+  color: rgb(53, 245, 6);
+}
+.pieDepagina .nav .redesSociales .iconotamaño .fa-facebook:hover {
+  color: rgb(12, 141, 228);
 }
 
 .CierreAbajo {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
-
-.diseñadorindustrial {
-  color: aliceblue;
+.CierreAbajo .diseñadorindustrial {
+  color: rgb(255, 255, 255);
   padding: 1%;
   justify-content: center;
   text-align: center;
 }
 
-.copyright {
-  color: aliceblue;
+main .proyectos {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 2.8%;
+  line-height: normal;
 }
-
-.container-fluid {
-  width: 100%;
-  height: 1%;
-  align-items: center;
-  display: flex;
-  background-color: rgb(117, 117, 117);
-}
-
-.nav-link:hover {
-  color: rgb(255, 0, 0);
-}
-
-.proyectosImagenes {
+main .proyectosImagenes {
   display: flex;
   width: 100%;
   padding: 3%;
   margin: 2%;
 }
-
-.carousel-item {
+main .proyectosImagenes .slide {
+  width: 75%;
+}
+main .proyectosImagenes .slide .carousel-inner .carousel-item {
   padding: 2%;
-}
-
-.card3 {
-  padding: 2%;
-  margin-right: 5%;
-}
-
-.subtitulo3 {
-  font-size: 25px;
-  line-height: normal;
-  text-align: justify;
-}
-
-.go {
-  width: 50%;
-  margin-left: 4%;
-  display: flex;
-}
-
-.sub {
-  font-size: 230%;
-  margin-left: 4%;
-}
-
-.casilla {
-  font-size: 140%;
-  width: 20%;
-  margin-left: 4%;
-  display: inline;
-}
-
-.formularios {
-  width: 40%;
-  padding-left: 10%;
-}
-
-.cuadroDialogo {
-  display: flex;
-}
-
-.btn-dark {
-  background-color: rgb(82, 81, 81);
-  justify-content: center;
-  position: absolute;
-  left: 50%;
-}
-
-.btn2 {
-  color: aliceblue;
-  justify-content: center;
-  background-color: rgb(138, 138, 138);
-}
-
-.clientes {
-  font-size: 200%;
-  text-align: center;
-  padding: 2%;
-  line-height: normal;
-}
-
-.logosMarcas {
-  width: 20%;
-  display: flex;
-  margin: 4%;
-}
-
-.img-thumbnail {
-  padding: 3%;
-  margin: 10%;
-}
-
-.bloque01 {
-  display: flex;
-  justify-content: center;
-}
-
-.img-thumbnail01 {
-  width: 25%;
-  padding: 4%;
-}
-
-.card50 {
-  padding: 5%;
-  font-size: 170%;
-}
-
-.card-title50 {
-  font-size: 200%;
-}
-
-.btn-oscuro {
-  background-color: black;
-  color: aliceblue;
 }
 
 @media screen and (max-width: 500px) {
-  .card-img {
-    display: block;
-    width: 100%;
-  }
-  .cuerpo {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .carruseles {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .encabezado {
-    display: block;
-  }
-  .logoinferior {
-    display: none;
-  }
-  .experienciaBtl {
-    font-size: 90%;
-  }
-  .card-textBTL {
-    font-size: 200%;
-  }
-  .footer {
-    align-items: center;
-    justify-content: center;
-  }
-  .fa-brands {
-    padding: 5%;
-    align-items: center;
-    justify-content: center;
-  }
-  .carouselExampleControlsNoTouching {
-    width: 100%;
-    display: flex;
-  }
   .proyectosImagenes {
+    display: inline-block;
+    width: 100%;
+  }
+  .proyectosImagenes .carouselExampleControlsNoTouching {
+    width: 100%;
+  }
+  .proyectosImagenes .carouselExampleControlsNoTouching .carousel-inner .d-block {
+    width: 100%;
+  }
+}
+main .tituloContactos {
+  font-size: 400%;
+  padding-top: 5%;
+  padding-left: 15%;
+  width: 100%;
+  height: 10%;
+}
+main .encabezadoContactos {
+  display: flex;
+}
+main .encabezadoContactos .parrafoContactos {
+  font-size: 20px;
+  line-height: 40px;
+  font-family: "Lato", sans-serif;
+  text-align: start;
+  width: 60%;
+  display: flex;
+  padding-left: 15%;
+}
+main .encabezadoContactos .imagenPersonal {
+  width: 30rem;
+  padding-left: 20%;
+}
+main .seccionMediaContacto {
+  background-color: rgb(133, 133, 133);
+  color: rgb(255, 255, 255);
+  padding: 3%;
+  display: flex;
+}
+main .seccionMediaContacto .EnQueteAyudo {
+  font-family: "Shantell Sans", cursive;
+  padding-left: 13%;
+  padding-top: 7%;
+}
+main .seccionMediaContacto .cuadroDialogo {
+  width: 30%;
+}
+main .seccionMediaContacto .cuadroDialogo .casilla {
+  font-size: 140%;
+  padding-left: 13%;
+}
+main .seccionMediaContacto .formularios {
+  width: 40%;
+  padding-right: 10%;
+}
+main .seccionMediaContacto .botonEnviar .btn-dark {
+  background-color: rgb(133, 133, 133);
+  justify-content: center;
+}
+main .mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  main .tituloContactos {
+    padding-left: 20%;
+  }
+  main .encabezadoContactos {
+    display: inline;
+  }
+  main .encabezadoContactos .parrafoContactos {
+    width: 90%;
+    margin-right: 10%;
+    text-align: center;
+  }
+  main .encabezadoContactos .imagenPersonal {
+    width: 100%;
+    padding-right: 10%;
+  }
+  main .seccionMediaContacto {
+    width: 100%;
+    background-color: rgb(133, 133, 133);
     display: block;
+  }
+  main .seccionMediaContacto .EnQueteAyudo {
+    padding-left: 27%;
+  }
+  main .seccionMediaContacto .cuadroDialogo {
+    width: 100%;
+    padding-left: 15%;
+  }
+  main .seccionMediaContacto .formularios {
+    width: 100%;
+    padding-left: 10%;
+  }
+  main .seccionMediaContacto .formularios .mb-3 .form-label {
+    padding-left: 42%;
+  }
+  main .seccionMediaContacto .formularios .botonEnviar {
+    padding-left: 41%;
+  }
+}
+.clientes {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 4%;
+  line-height: normal;
+}
+
+.galeriaClientes {
+  width: 90%;
+  display: flex;
+  margin: 4%;
+  padding: 2%;
+}
+
+.galeria_img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+}
+
+.galeria_imagenes {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.galeria_imagenes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.galeria_imagenes:hover::before {
+  transform: scaleY(1);
+}
+
+.galeria_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.galeria_imagenes--g1::before {
+  content: "DEAGEO-ECUACOR";
+}
+
+.galeria_imagenes--g2::before {
+  content: "KOALA COLOMBIA";
+}
+
+.galeria_imagenes--g3::before {
+  content: "FERRERO LATINO";
+}
+
+.galeria_imagenes--g4::before {
+  content: "PLAY DOH SOMBRILLA";
+}
+
+.galeria_imagenes--g5::before {
+  content: "BIOMAX BOGOTA";
+}
+
+.galeria_imagenes--g6::before {
+  content: "MICROSOFT X-BOX";
+}
+
+.galeria_imagenes--g7::before {
+  content: "ADIDAS AMERICA";
+}
+
+.galeria_imagenes--g8::before {
+  content: "FALABELLA COLOMBIA";
+}
+
+.galeria_imagenes--g9::before {
+  content: "NUTRESA";
+}
+
+.galeria_imagenes--g10::before {
+  content: "HERO-SANCHO";
+}
+
+.galeria_imagenes--g11::before {
+  content: "PHILIPS MORGAN";
+}
+
+.galeria_imagenes--g12::before {
+  content: "MATEL-MEXICO";
+}
+
+.galeria_imagenes--g13::before {
+  content: "TERPEL-MEDELLIN";
+}
+
+.galeria_imagenes--g14::before {
+  content: "MARGARITA";
+}
+
+.galeria_imagenes--g15::before {
+  content: "PEPSI-REGION";
+}
+
+.galeria_imagenes--g16::before {
+  content: "UNILEVER-LATINOAMERICA";
+}
+
+@media screen and (max-width: 500px) {
+  .galeriaClientes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 47% 47%;
+  }
+}
+.ServiciosBloque01 {
+  display: flex;
+  justify-content: center;
+}
+.ServiciosBloque01 .bloqueSuperior {
+  padding-top: 5%;
+  padding-left: 25%;
+  width: 60%;
+}
+.ServiciosBloque01 .bloqueSuperior .tituloImagenCorporativa {
+  font-size: 50px;
+  width: 100%;
+}
+.ServiciosBloque01 .bloqueSuperior .textoImagenCorporativa {
+  font-size: 25px;
+  width: 80%;
+}
+.ServiciosBloque01 .bloqueSuperior .iconoFlecha2 {
+  width: 10%;
+  font-size: 60px;
+  color: rgb(133, 133, 133);
+  padding-left: 40%;
+  padding-top: 3%;
+}
+.ServiciosBloque01 .bloqueSuperior .iconoFlecha2:hover {
+  color: crimson;
+}
+.ServiciosBloque01 .imagenCorporatica {
+  width: 15%;
+  padding-top: 4%;
+  margin-right: 25%;
+  transition: all 1s;
+}
+.ServiciosBloque01 .imagenCorporatica:hover {
+  width: 20%;
+  transition: all 1s;
+}
+
+.ServiciosBloque02 {
+  width: 100%;
+  display: flex;
+  background-color: rgb(73, 73, 73);
+  padding: 4%;
+}
+.ServiciosBloque02 .imagenModelado3d {
+  width: 20%;
+  margin-left: 25%;
+  height: 25%;
+}
+.ServiciosBloque02 .imagenModelado3d:hover {
+  width: 25%;
+  transition: all 1s;
+}
+.ServiciosBloque02 .bloqueModelado3d {
+  padding-top: 4%;
+  padding-right: 10%;
+  margin-left: 10%;
+}
+.ServiciosBloque02 .bloqueModelado3d .tituloModelado3d {
+  font-size: 50px;
+  width: 60%;
+  color: rgb(255, 255, 255);
+  padding-right: 10%;
+  text-align: center;
+}
+.ServiciosBloque02 .bloqueModelado3d .textoModelado3d {
+  font-size: 25px;
+  width: 65%;
+  color: rgb(255, 255, 255);
+}
+.ServiciosBloque02 .bloqueModelado3d .iconoFlecha5 {
+  width: 10%;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  padding-left: 40%;
+  padding-top: 3%;
+}
+.ServiciosBloque02 .bloqueModelado3d .iconoFlecha5:hover {
+  color: crimson;
+}
+
+.ServicosBloque03 {
+  display: flex;
+}
+.ServicosBloque03 .bloqueInferior {
+  padding-top: 5%;
+  padding-left: 25%;
+  width: 60%;
+}
+.ServicosBloque03 .bloqueInferior .tituloCreacionProyectos {
+  font-size: 50px;
+  width: 100%;
+}
+.ServicosBloque03 .bloqueInferior .textoCreacionProyectos {
+  font-size: 25px;
+  width: 80%;
+}
+.ServicosBloque03 .bloqueInferior .iconoFlecha4 {
+  width: 10%;
+  font-size: 60px;
+  color: rgb(133, 133, 133);
+  padding-left: 40%;
+  padding-top: 3%;
+}
+.ServicosBloque03 .bloqueInferior .iconoFlecha4:hover {
+  color: crimson;
+}
+.ServicosBloque03 .imagenXbox {
+  width: 15%;
+  padding-top: 4%;
+  margin-right: 25%;
+}
+.ServicosBloque03 .imagenXbox:hover {
+  width: 20%;
+  transition: all 1s;
+}
+
+@media screen and (max-width: 500px) {
+  .ServiciosBloque01 {
+    display: inline-block;
+  }
+  .ServiciosBloque01 .bloqueSuperior {
+    width: 100%;
+  }
+  .ServiciosBloque01 .imagenCorporatica {
+    width: 100%;
+    transition: none;
+  }
+  .ServiciosBloque01 .imagenCorporatica:hover {
+    width: 100%;
+  }
+  .ServiciosBloque02 {
+    display: inline-block;
+  }
+  .ServiciosBloque02 .imagenModelado3d {
+    width: 110%;
+    margin-left: -5%;
+  }
+  .ServiciosBloque02 .imagenModelado3d:hover {
+    width: 110%;
+    transition: none;
+  }
+  .ServiciosBloque02 .imagenModelado3d .bloqueModelado3d {
+    width: 100%;
+  }
+  .ServiciosBloque02 .imagenModelado3d .bloqueModelado3d .tituloModelado3d {
+    width: 100%;
+  }
+  .ServiciosBloque02 .imagenModelado3d .bloqueModelado3d .textoModelado3d {
+    width: 100%;
+    padding-left: 4%;
+  }
+  .ServicosBloque03 {
+    display: inline-block;
+  }
+  .ServicosBloque03 .bloqueInferior {
+    width: 100%;
+  }
+  .ServicosBloque03 .imagenXbox {
+    width: 100%;
+    transition: none;
+  }
+  .ServicosBloque03 .imagenXbox:hover {
+    width: 100%;
   }
 }/*# sourceMappingURL=estilos.css.map */

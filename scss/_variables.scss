@@ -1,0 +1,22 @@
+$color-primario: rgb(0, 0, 0);
+$color-secundario: rgb(255, 255, 255);
+$color-terciario: rgb(97, 97, 97);
+$color-cuerto: rgb(133, 133, 133);
+$color-quinto: rgb(73, 73, 73);
+$color-rojo: crimson;
+$color-instagran: rgb(255, 12, 133);
+$color-whassap: rgb(53, 245, 6);
+$color-facebook: rgb(12, 141, 228);
+$fuente-general: 'Shantell Sans', cursive;
+$contenedor-flex: flex;
+$contenedor-inline: inline;
+$justify-between: space-between;
+$justify-center: center;
+$align-items: center;
+$text-aline: justify;
+
+$redes:(
+    facebook : rgb(12, 141, 228),
+    instagram :rgb(255, 12, 133),
+    whassap: rgb(53, 245, 6),
+);

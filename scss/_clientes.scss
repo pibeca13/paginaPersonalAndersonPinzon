@@ -1,0 +1,99 @@
+.clientes{font-size: 30px;text-align: center;padding-top: 4%;line-height: normal;}
+.galeriaClientes{width: 90%;display: $contenedor-flex;margin: 4%;padding: 2%;}
+.galeria_img{width: 50%;display: $contenedor-flex;justify-content:$justify-center;padding: 10%;}
+
+.galeria_imagenes{
+    position:relative;
+    cursor:pointer;   
+    overflow: hidden;
+
+}
+.galeria_imagenes::before{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(133, 133, 133, 0.842);
+    width: 100%; height: 100%;
+    padding: 10%;
+    
+ 
+    transform: scaleY(0);
+    transition: transform .4s;
+    color:$color-secundario;
+    display:$contenedor-flex;
+    justify-content: $justify-center;
+    align-items:center ;
+    font-size:1.5rem ;
+    
+}
+.galeria_imagenes:hover::before{
+ 
+     transform: scaleY(1);
+
+ 
+}
+
+.galeria_img{
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+}
+
+.galeria_imagenes--g1::before{
+    content:"DEAGEO-ECUACOR";}
+
+
+.galeria_imagenes--g2::before{
+    content:"KOALA COLOMBIA";}
+
+.galeria_imagenes--g3::before{
+    content:"FERRERO LATINO";}
+
+.galeria_imagenes--g4::before{
+    content:"PLAY DOH SOMBRILLA";}
+
+.galeria_imagenes--g5::before{
+    content:"BIOMAX BOGOTA";}
+    
+.galeria_imagenes--g6::before{
+    content:"MICROSOFT X-BOX";}
+ 
+.galeria_imagenes--g7::before{
+    content:"ADIDAS AMERICA";}
+    
+.galeria_imagenes--g8::before{
+    content:"FALABELLA COLOMBIA";}
+     
+.galeria_imagenes--g9::before{
+    content:"NUTRESA";}
+
+.galeria_imagenes--g10::before{
+    content:"HERO-SANCHO";}
+
+.galeria_imagenes--g11::before{
+    content:"PHILIPS MORGAN";}
+
+.galeria_imagenes--g12::before{
+    content:"MATEL-MEXICO";}
+
+.galeria_imagenes--g13::before{
+    content:"TERPEL-MEDELLIN";}
+
+.galeria_imagenes--g14::before{
+    content:"MARGARITA";}
+
+.galeria_imagenes--g15::before{
+    content:"PEPSI-REGION";}
+
+.galeria_imagenes--g16::before{
+    content:"UNILEVER-LATINOAMERICA";}
+
+@media screen and (max-width: 500px){
+    .galeriaClientes{width: 100%;display: grid;
+        grid-template-columns: 47% 47%;}
+    
+}   

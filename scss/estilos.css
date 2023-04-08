@@ -13,7 +13,10 @@ body {
   width: 100%;
 }
 
-header .container-fluid {
+nav {
+  color: rgb(255, 255, 255);
+}
+nav .container-fluid {
   width: 100%;
   height: 1%;
   align-items: center;
@@ -21,66 +24,24 @@ header .container-fluid {
   background-color: rgb(133, 133, 133);
   font-size: 20px;
 }
-
-nav {
-  color: rgb(255, 255, 255);
+nav .container-fluid .collapse {
+  width: 50%;
 }
-nav .nav-link {
+nav .container-fluid .collapse .navbar-nav {
+  display: flex;
   width: 100%;
 }
-nav .nav-link:hover {
+nav .container-fluid .collapse .navbar-nav .nav-item {
+  padding: 2%;
+}
+nav .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+  display: flex;
+  width: 100%;
+}
+nav .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
   background-color: rgb(0, 0, 0);
 }
 
-@media screen and (max-width: 500px) {
-  main .encabezado {
-    display: block;
-  }
-  main .encabezado .titulo {
-    width: 100%;
-    font-size: 50px;
-  }
-  main .encabezado .card-img2 {
-    display: block;
-    width: 155%;
-  }
-  main .titulo2 {
-    width: 100%;
-    font-size: 45px;
-    text-align: center;
-  }
-  main .franja .cuerpo {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  main .tercerBloque .card text .card-body2 .experienciaBtl {
-    font-size: 90%;
-  }
-  main .tercerBloque .card text .card-body2 .card-textBTL {
-    font-size: 200%;
-  }
-  .pieDepagina {
-    align-items: center;
-    justify-content: center;
-  }
-  .pieDepagina .cierre .logoinferior {
-    display: none;
-  }
-  .pieDepagina .cierre .nav .redesSociales {
-    display: flex;
-    width: 100%;
-  }
-  .pieDepagina .cierre .nav .redesSociales .iconotamaño {
-    width: 30%;
-    display: flex;
-  }
-  .pieDepagina .cierre .nav .redesSociales .iconotamaño .fa-brands {
-    padding: 5%;
-    align-items: center;
-    justify-content: center;
-  }
-}
 main .encabezado {
   display: flex;
   justify-content: space-between;
@@ -131,6 +92,9 @@ main .franja .cuerpo .col-sm-6 .card .card-body {
   margin-right: 15%;
   margin-top: 4%;
 }
+main .franja .cuerpo .col-sm-6 .card .card-body .card-title {
+  font-size: 25px;
+}
 main .iconoFlecha {
   width: 10%;
   font-size: 60px;
@@ -161,6 +125,49 @@ main .cardDesarrollo .card-textF {
   font-size: 17px;
 }
 
+@media screen and (max-width: 500px) {
+  main .encabezado {
+    display: block;
+  }
+  main .encabezado .titulo {
+    font-size: 70px;
+    width: 100%;
+  }
+  main .encabezado .card-img2 {
+    display: block;
+    width: 155%;
+  }
+  main .franja .cuerpo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1020px) {
+  main .encabezado {
+    display: block;
+  }
+  main .encabezado .titulo {
+    font-size: 70px;
+    width: 100%;
+  }
+  main .encabezado .card-img2 {
+    display: block;
+    width: 155%;
+  }
+  main .franja .cuerpo {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-left: 10%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  main .franja .cuerpo .col-sm-6 .card .card-body {
+    width: 100%;
+  }
+}
 main .tercerBloque {
   width: 100%;
   height: 100%;
@@ -185,6 +192,14 @@ main .tercerBloque .card-body2 .acceso {
   justify-content: center;
 }
 
+@media screen and (max-width: 500px) {
+  main .tercerBloque .card .card-body2 .experienciaBtl {
+    font-size: 90%;
+  }
+  main .tercerBloque .card .card-body2 .card-textBTL {
+    font-size: 200%;
+  }
+}
 .portafolio {
   display: flex;
   overflow: hidden;
@@ -217,19 +232,19 @@ main .tercerBloque .card-body2 .acceso {
   width: 100%;
   align-items: center;
 }
-.pieDepagina .nav .nav-item {
+.pieDepagina .nav .nav-item4 {
   padding-left: 3%;
 }
-.pieDepagina .nav .nav-item .nav-link2 {
+.pieDepagina .nav .nav-item4 .nav-link2 {
   text-decoration: none;
   color: rgb(73, 73, 73);
   font-size: 130%;
   width: 50%;
 }
-.pieDepagina .nav .nav-item .nav-link2:hover {
+.pieDepagina .nav .nav-item4 .nav-link2:hover {
   color: rgb(12, 141, 228);
 }
-.pieDepagina .nav .nav-item .nav-link {
+.pieDepagina .nav .nav-item4 .nav-link {
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
@@ -257,6 +272,58 @@ main .tercerBloque .card-body2 .acceso {
   color: rgb(12, 141, 228);
 }
 
+@media screen and (max-width: 500px) {
+  .pieDepagina .cierre .logoinferior {
+    display: none;
+  }
+  .pieDepagina .cierre .nav {
+    display: flex;
+    width: 100%;
+    margin-left: 7%;
+  }
+  .pieDepagina .cierre .nav .nav-item4 .nav-link2 {
+    font-size: 20px;
+  }
+  .pieDepagina .cierre .nav .nav-item4 .nav-link {
+    font-size: 20px;
+  }
+  .pieDepagina .cierre .redesSociales {
+    display: flex;
+    width: 100%;
+    margin-right: 8%;
+  }
+  .pieDepagina .cierre .redesSociales .iconotamaño {
+    display: flex;
+    width: 100%;
+    padding: 4%;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1020px) {
+  .pieDepagina .cierre .logoinferior {
+    display: none;
+  }
+  .pieDepagina .cierre .nav {
+    display: flex;
+    width: 100%;
+    margin-left: 7%;
+  }
+  .pieDepagina .cierre .nav .nav-item4 .nav-link2 {
+    font-size: 20px;
+  }
+  .pieDepagina .cierre .nav .nav-item4 .nav-link {
+    font-size: 20px;
+  }
+  .pieDepagina .cierre .redesSociales {
+    display: flex;
+    width: 100%;
+    margin-right: 8%;
+  }
+  .pieDepagina .cierre .redesSociales .iconotamaño {
+    display: flex;
+    width: 100%;
+    padding: 4%;
+  }
+}
 .CierreAbajo {
   background-color: rgb(0, 0, 0);
 }
@@ -285,16 +352,68 @@ main .proyectosImagenes .slide {
 main .proyectosImagenes .slide .carousel-inner .carousel-item {
   padding: 2%;
 }
+main .proyectosImagenes2 {
+  display: flex;
+  width: 100%;
+  padding: 3%;
+  margin: 2%;
+}
+main .proyectosImagenes2 .slide {
+  width: 75%;
+}
+main .proyectosImagenes2 .slide .carousel-inner .carousel-item {
+  padding: 2%;
+}
 
 @media screen and (max-width: 500px) {
-  .proyectosImagenes {
+  main .proyectosImagenes {
     display: inline-block;
+    width: 96%;
+  }
+  main .proyectosImagenes .carousel {
     width: 100%;
   }
-  .proyectosImagenes .carouselExampleControlsNoTouching {
+  main .proyectosImagenes .carousel .carousel-inner {
     width: 100%;
   }
-  .proyectosImagenes .carouselExampleControlsNoTouching .carousel-inner .d-block {
+  main .proyectosImagenes .carousel .carousel-inner .carousel-item {
+    width: 100%;
+  }
+  main .proyectosImagenes .carousel .carousel-inner .carousel-item .d-block {
+    width: 100%;
+  }
+  main .proyectosImagenes2 {
+    display: inline-block;
+    width: 96%;
+  }
+  main .proyectosImagenes2 .carousel {
+    width: 100%;
+  }
+  main .proyectosImagenes2 .carousel .carousel-inner {
+    width: 100%;
+  }
+  main .proyectosImagenes2 .carousel .carousel-inner .carousel-item {
+    width: 100%;
+  }
+  main .proyectosImagenes2 .carousel .carousel-inner .carousel-item .d-block {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1020px) {
+  main .proyectosImagenes {
+    display: inline-block;
+    width: 44%;
+  }
+  main .proyectosImagenes .carousel {
+    width: 120%;
+  }
+  main .proyectosImagenes .carousel .carousel-inner {
+    width: 100%;
+  }
+  main .proyectosImagenes .carousel .carousel-inner .carousel-item {
+    width: 100%;
+  }
+  main .proyectosImagenes .carousel .carousel-inner .carousel-item .d-block {
     width: 100%;
   }
 }
@@ -392,35 +511,68 @@ main .mapa {
     padding-left: 41%;
   }
 }
-.clientes {
+@media screen and (min-width: 750px) and (max-width: 1020px) {
+  main .tituloContactos {
+    text-align: center;
+    padding-left: 5%;
+  }
+  main .encabezadoContactos {
+    display: inline;
+  }
+  main .encabezadoContactos .parrafoContactos {
+    width: 90%;
+    margin-right: 10%;
+    text-align: center;
+  }
+  main .encabezadoContactos .imagenPersonal {
+    width: 70%;
+    padding-left: 30%;
+  }
+  main .seccionMediaContacto {
+    width: 100%;
+    background-color: rgb(133, 133, 133);
+    display: block;
+  }
+  main .seccionMediaContacto .EnQueteAyudo {
+    padding-left: 33%;
+  }
+  main .seccionMediaContacto .cuadroDialogo {
+    width: 100%;
+    padding-left: 25%;
+  }
+  main .seccionMediaContacto .formularios {
+    width: 100%;
+    padding-left: 10%;
+  }
+  main .seccionMediaContacto .formularios .mb-3 .form-label {
+    padding-left: 42%;
+  }
+  main .seccionMediaContacto .formularios .botonEnviar {
+    padding-left: 41%;
+  }
+}
+main .clientes {
   font-size: 30px;
   text-align: center;
   padding-top: 4%;
   line-height: normal;
 }
-
-.galeriaClientes {
+main .galeriaClientes1 {
   width: 90%;
   display: flex;
   margin: 4%;
   padding: 2%;
 }
-
-.galeria_img {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  padding: 10%;
-}
-
-.galeria_imagenes {
+main .galeriaClientes1 .galeriaImagenes1 {
   position: relative;
   cursor: pointer;
   overflow: hidden;
 }
-
-.galeria_imagenes::before {
-  content: "";
+main .galeriaClientes1 .galeriaImagenes1:hover::before {
+  transform: scaleY(1);
+}
+main .galeriaClientes1 .galeriaImagenes1::before {
+  content: "DEAGEO-ECUACOR";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -438,84 +590,607 @@ main .mapa {
   align-items: center;
   font-size: 1.5rem;
 }
-
-.galeria_imagenes:hover::before {
+main .galeriaClientes1 .galeriaImagenes1 .galeria_img1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .galeriaImagenes2 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .galeriaImagenes2:hover::before {
   transform: scaleY(1);
 }
-
-.galeria_img {
+main .galeriaImagenes2::before {
+  content: "KOALA COLOMBIA";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .galeriaImagenes2 .galeria_img2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .galeriaImagenes3 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .galeriaImagenes3:hover::before {
+  transform: scaleY(1);
+}
+main .galeriaImagenes3::before {
+  content: "FERRERO LATINO";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .galeriaImagenes3 .galeria_img3 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .galeriaImagenes4 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .galeriaImagenes4:hover::before {
+  transform: scaleY(1);
+}
+main .galeriaImagenes4::before {
+  content: "PLAY DOH SOMBRILLA";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .galeriaImagenes4 .galeria_img4 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .galeriaClientes2 {
+  width: 90%;
+  display: flex;
+  margin: 4%;
+  padding: 2%;
+}
+main .galeriaClientes2 .galeriaImagenes5 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .galeriaClientes2 .galeriaImagenes5:hover::before {
+  transform: scaleY(1);
+}
+main .galeriaClientes2 .galeriaImagenes5::before {
+  content: "BIOMAX BOGOTA";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .galeriaClientes2 .galeriaImagenes5 .galeria_img5 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .galeriaImagenes6 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .galeriaImagenes6:hover::before {
+  transform: scaleY(1);
+}
+main .galeriaImagenes6::before {
+  content: "MICROSOFT X-BOX";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .galeriaImagenes6 .galeria_img6 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .galeriaImagenes7 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .galeriaImagenes7:hover::before {
+  transform: scaleY(1);
+}
+main .galeriaImagenes7::before {
+  content: "ADIDAS AMERICA";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .galeriaImagenes7 .galeria_img7 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .galeriaImagenes8 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .galeriaImagenes8:hover::before {
+  transform: scaleY(1);
+}
+main .galeriaImagenes8::before {
+  content: "FALABELLA COLOMBIA";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .galeriaImagenes8 .galeria_img8 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .galeriaClientes3 {
+  width: 90%;
+  display: flex;
+  margin: 4%;
+  padding: 2%;
+}
+main .galeriaClientes3 .galeriaImagenes9 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .galeriaClientes3 .galeriaImagenes9:hover::before {
+  transform: scaleY(1);
+}
+main .galeriaClientes3 .galeriaImagenes9::before {
+  content: "NUTRESA";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .galeriaClientes3 .galeriaImagenes9 .galeria_img9 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .galeriaImagenes10 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .galeriaImagenes10:hover::before {
+  transform: scaleY(1);
+}
+main .galeriaImagenes10::before {
+  content: "HERO-SANCHO";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .galeriaImagenes10 .galeria_img10 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .galeriaImagenes11 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .galeriaImagenes11:hover::before {
+  transform: scaleY(1);
+}
+main .galeriaImagenes11::before {
+  content: "PHILIPS MORGAN";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .galeriaImagenes11 .galeria_img11 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .galeriaImagenes12 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .galeriaImagenes12:hover::before {
+  transform: scaleY(1);
+}
+main .galeriaImagenes12::before {
+  content: "MATEL-MEXICO";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .galeriaImagenes12 .galeria_img12 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .galeriaClientes4 {
+  width: 90%;
+  display: flex;
+  margin: 4%;
+  padding: 2%;
+}
+main .galeriaClientes4 .galeriaImagenes13 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .galeriaClientes4 .galeriaImagenes13:hover::before {
+  transform: scaleY(1);
+}
+main .galeriaClientes4 .galeriaImagenes13::before {
+  content: "TERPEL-MEDELLIN";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .galeriaClientes4 .galeriaImagenes13 .galeria_img13 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .galeriaImagenes14 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .galeriaImagenes14:hover::before {
+  transform: scaleY(1);
+}
+main .galeriaImagenes14::before {
+  content: "MARGARITA";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .galeriaImagenes14 .galeria_img14 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .galeriaImagenes15 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .galeriaImagenes15:hover::before {
+  transform: scaleY(1);
+}
+main .galeriaImagenes15::before {
+  content: "PEPSI-REGIO";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .galeriaImagenes15 .galeria_img15 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .galeriaImagenes16 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .galeriaImagenes16:hover::before {
+  transform: scaleY(1);
+}
+main .galeriaImagenes16::before {
+  content: "UNILEVER-LATINOAMERICA";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(133, 133, 133, 0.842);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main .galeriaImagenes16 .galeria_img16 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.galeria_imagenes--g1::before {
-  content: "DEAGEO-ECUACOR";
-}
-
-.galeria_imagenes--g2::before {
-  content: "KOALA COLOMBIA";
-}
-
-.galeria_imagenes--g3::before {
-  content: "FERRERO LATINO";
-}
-
-.galeria_imagenes--g4::before {
-  content: "PLAY DOH SOMBRILLA";
-}
-
-.galeria_imagenes--g5::before {
-  content: "BIOMAX BOGOTA";
-}
-
-.galeria_imagenes--g6::before {
-  content: "MICROSOFT X-BOX";
-}
-
-.galeria_imagenes--g7::before {
-  content: "ADIDAS AMERICA";
-}
-
-.galeria_imagenes--g8::before {
-  content: "FALABELLA COLOMBIA";
-}
-
-.galeria_imagenes--g9::before {
-  content: "NUTRESA";
-}
-
-.galeria_imagenes--g10::before {
-  content: "HERO-SANCHO";
-}
-
-.galeria_imagenes--g11::before {
-  content: "PHILIPS MORGAN";
-}
-
-.galeria_imagenes--g12::before {
-  content: "MATEL-MEXICO";
-}
-
-.galeria_imagenes--g13::before {
-  content: "TERPEL-MEDELLIN";
-}
-
-.galeria_imagenes--g14::before {
-  content: "MARGARITA";
-}
-
-.galeria_imagenes--g15::before {
-  content: "PEPSI-REGION";
-}
-
-.galeria_imagenes--g16::before {
-  content: "UNILEVER-LATINOAMERICA";
-}
-
 @media screen and (max-width: 500px) {
-  .galeriaClientes {
+  main .galeriaClientes1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 47% 47%;
+  }
+  main .galeriaClientes2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 47% 47%;
+  }
+  main .galeriaClientes3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 47% 47%;
+  }
+  main .galeriaClientes4 {
     width: 100%;
     display: grid;
     grid-template-columns: 47% 47%;
@@ -639,51 +1314,129 @@ main .mapa {
 }
 
 @media screen and (max-width: 500px) {
-  .ServiciosBloque01 {
-    display: inline-block;
-  }
-  .ServiciosBloque01 .bloqueSuperior {
+  body {
     width: 100%;
   }
-  .ServiciosBloque01 .imagenCorporatica {
+  body .ServiciosBloque01 {
+    display: inline-block;
+  }
+  body .ServiciosBloque01 .bloqueSuperior {
+    width: 100%;
+  }
+  body .ServiciosBloque01 .imagenCorporatica {
+    display: flex;
     width: 100%;
     transition: none;
   }
-  .ServiciosBloque01 .imagenCorporatica:hover {
+  body .ServiciosBloque01 .imagenCorporatica:hover {
     width: 100%;
+    transition: none;
   }
-  .ServiciosBloque02 {
+  body .ServiciosBloque02 {
     display: inline-block;
   }
-  .ServiciosBloque02 .imagenModelado3d {
-    width: 110%;
+  body .ServiciosBloque02 .imagenModelado3d {
+    display: flex;
+    width: 108%;
     margin-left: -5%;
   }
-  .ServiciosBloque02 .imagenModelado3d:hover {
-    width: 110%;
+  body .ServiciosBloque02 .imagenModelado3d:hover {
+    width: 108%;
     transition: none;
   }
-  .ServiciosBloque02 .imagenModelado3d .bloqueModelado3d {
+  body .ServiciosBloque02 .bloqueModelado3d {
+    width: 90%;
+    margin-left: 14%;
+  }
+  body .ServiciosBloque02 .bloqueModelado3d .tituloModelado3d {
     width: 100%;
   }
-  .ServiciosBloque02 .imagenModelado3d .bloqueModelado3d .tituloModelado3d {
+  body .ServiciosBloque02 .bloqueModelado3d .textoModelado3d {
     width: 100%;
   }
-  .ServiciosBloque02 .imagenModelado3d .bloqueModelado3d .textoModelado3d {
-    width: 100%;
-    padding-left: 4%;
-  }
-  .ServicosBloque03 {
+  body .ServicosBloque03 {
     display: inline-block;
   }
-  .ServicosBloque03 .bloqueInferior {
+  body .ServicosBloque03 .bloqueInferior {
     width: 100%;
   }
-  .ServicosBloque03 .imagenXbox {
+  body .ServicosBloque03 .imagenXbox {
+    display: flex;
     width: 100%;
     transition: none;
   }
-  .ServicosBloque03 .imagenXbox:hover {
+  body .ServicosBloque03 .imagenXbox:hover {
     width: 100%;
+    transition: none;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1020px) {
+  body {
+    width: 100%;
+  }
+  body .ServiciosBloque01 {
+    display: flex;
+  }
+  body .ServiciosBloque01 .bloqueSuperior {
+    width: 100%;
+  }
+  body .ServiciosBloque01 .imagenCorporatica {
+    display: flex;
+    width: 40%;
+    height: 40%;
+    margin-top: 5%;
+    margin-left: 4%;
+    transition: none;
+  }
+  body .ServiciosBloque01 .imagenCorporatica:hover {
+    width: 40%;
+    height: 40%;
+    transition: none;
+  }
+  body .ServiciosBloque02 {
+    display: flex;
+  }
+  body .ServiciosBloque02 .imagenModelado3d {
+    display: flex;
+    width: 40%;
+    height: 40%;
+    margin-top: 5%;
+    margin-left: 4%;
+    transition: none;
+  }
+  body .ServiciosBloque02 .imagenModelado3d:hover {
+    width: 40%;
+    height: 40%;
+    transition: none;
+  }
+  body .ServiciosBloque02 .bloqueModelado3d {
+    width: 90%;
+    margin-left: 14%;
+  }
+  body .ServiciosBloque02 .bloqueModelado3d .tituloModelado3d {
+    width: 100%;
+  }
+  body .ServiciosBloque02 .bloqueModelado3d .textoModelado3d {
+    width: 100%;
+  }
+  body .ServicosBloque03 {
+    display: flex;
+    margin-left: -11%;
+  }
+  body .ServicosBloque03 .bloqueInferior {
+    width: 100%;
+  }
+  body .ServicosBloque03 .imagenXbox {
+    display: flex;
+    width: 40%;
+    height: 40%;
+    margin-top: 5%;
+    margin-left: 4%;
+    transition: none;
+  }
+  body .ServicosBloque03 .imagenXbox:hover {
+    width: 40%;
+    height: 40%;
+    transition: none;
   }
 }/*# sourceMappingURL=estilos.css.map */

@@ -39,6 +39,9 @@ main{
                         margin-left: 15%;
                         margin-right: 15%;
                         margin-top: 4%;
+                        .card-title{
+                            font-size: 25px;
+                        }
                     }
                 }
                 
@@ -76,4 +79,118 @@ main{
 } 
   
     
+}
+@media screen and (max-width: 500px){
+    main{
+        .encabezado{
+            display: block;
+            .titulo{
+                font-size: 70px;
+                width: 100%;               
+                .subtitulo{
+
+                }
+
+            }
+            .card-img2{
+                display: block;width: 155%;
+            }            
+        }
+        .titulo2{
+            .subtitulo2{
+
+            }
+
+        }
+        .franja{
+            .cuerpo{
+                display: block;
+                width: 100%;
+                height: auto;
+                .col-sm-6{
+                    .card{
+                        .card-body{
+                            .card-title{
+
+                            }
+                            .card-text{
+
+                            }
+                            .iconoFlecha{
+
+                            }
+
+                        }
+
+                    }
+
+                }
+            }
+
+        }      
+
+    }   
+
+}
+
+@media screen and (min-width: 750px) and (max-width: 1020px){
+    main{
+        .encabezado{
+            display: block;
+            .titulo{
+                font-size: 70px;
+                width: 100%;                             
+                .subtitulo{
+
+                }
+
+            }
+            .card-img2{
+                display: block;width: 155%;
+            }            
+        }
+        .titulo2{
+            .subtitulo2{
+
+            }
+
+        }
+        .franja{ 
+                              
+            
+            .cuerpo{ 
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                padding-left: 10%;
+                justify-content: center;                                             
+            display: grid;            
+            grid-template-columns: 50% 50%;                       
+               
+                .col-sm-6{
+                    
+                    .card{
+                        .card-body{
+                            width: 100%;                           
+                            .card-title{
+
+                            }
+                            .card-text{
+
+                            }
+                            .iconoFlecha{
+
+                            }
+
+                        }
+
+                    }
+
+                }
+            }
+
+        }      
+
+    }   
+
 }

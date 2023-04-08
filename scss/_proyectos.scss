@@ -18,7 +18,22 @@ main{
                 }
 
             }
-        }
+        }        
+        
+    }
+    .proyectosImagenes2{
+        display: $contenedor-flex;
+        width: 100%;
+        padding: 3%;margin: 2%;
+        .slide{
+            width: 75%;
+            .carousel-inner{
+                .carousel-item{
+                    padding: 2%;
+                }
+
+            }
+        }        
         
     }
     
@@ -26,19 +41,74 @@ main{
     
 
 @media screen and (max-width: 500px){
-    .proyectosImagenes{
+    main{
+        .proyectosImagenes{
         display: inline-block;
-        width:100%;
-        .carouselExampleControlsNoTouching{
-            width: 100%;
-            .carousel-inner{
-                .d-block{
+        width:96%;        
+            .carousel{
+                width: 100%;
+                .carousel-inner{
                     width: 100%;
+                    .carousel-item{
+                        width: 100%;
+                        .d-block{
+                            width: 100%;
+
+                        }
+
+                    }
                 }
 
-            }                   
+            }
 
         }
-    }    
+        .proyectosImagenes2{
+            display: inline-block;
+            width:96%;        
+                .carousel{
+                    width: 100%;
+                    .carousel-inner{
+                        width: 100%;
+                        .carousel-item{
+                            width: 100%;
+                            .d-block{
+                                width: 100%;
+    
+                            }
+    
+                        }
+                    }
+    
+                }
+    
+            }
+    }     
+
+}
+
+@media screen and (min-width: 750px) and (max-width: 1020px){
+    main{
+        .proyectosImagenes{
+        display: inline-block;
+        width:44%;        
+            .carousel{
+                width: 120%;
+                .carousel-inner{
+                    width: 100%;
+                    .carousel-item{
+                        width: 100%;
+                        .d-block{
+                            width: 100%;
+
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+        
+    }     
 
 }

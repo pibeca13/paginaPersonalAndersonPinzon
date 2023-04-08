@@ -11,7 +11,7 @@
 .nav{
     width: 100%;
     align-items: $align-items;
-    .nav-item{
+    .nav-item4{
         padding-left: 3%;
         .nav-link2{
             text-decoration: none;
@@ -58,6 +58,101 @@
 }
 
 }
+
+@media screen and (max-width: 500px){
+    .pieDepagina{
+        .cierre{
+            .logoinferior{
+                display: none;
+
+            }
+            .nav{
+                display: flex;
+                width: 100%;
+                margin-left: 7%;              
+                .nav-item4{                                                                                                                  
+                    .nav-link2{
+                        font-size: 20px;                                                              
+                                                                                           
+                    }
+                    .nav-link{
+                        font-size: 20px; 
+
+                    }
+
+                }
+            }
+            .redesSociales{
+                display: flex;
+                width: 100%;
+                margin-right: 8%;
+                .iconotamaño{
+                    display: flex;
+                    width: 100%;
+                    padding: 4%;                   
+
+                }
+
+            }
+
+        }
+
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1020px){
+    .pieDepagina{
+        .cierre{
+            .logoinferior{
+                display: none;
+
+            }
+            .nav{
+                display: flex;
+                width: 100%;
+                margin-left: 7%;              
+                .nav-item4{                                                                                                                  
+                    .nav-link2{
+                        font-size: 20px;                                                              
+                                                                                           
+                    }
+                    .nav-link{
+                        font-size: 20px; 
+
+                    }
+
+                }
+            }
+            .redesSociales{
+                display: flex;
+                width: 100%;
+                margin-right: 8%;
+                .iconotamaño{
+                    display: flex;
+                    width: 100%;
+                    padding: 4%;                   
+
+                }
+
+            }
+
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -118,11 +118,12 @@
 
     
  @media screen and (max-width: 500px){
-  
+  body{ 
+    width: 100%; 
     .ServiciosBloque01{
       display: inline-block;
       .bloqueSuperior{
-        width: 100%;
+        width:100%;
         .tituloImagenCorporativa{
 
         }
@@ -134,10 +135,12 @@
         }       
         }
         .imagenCorporatica{
-          width: 100%;
+          display: flex;
+          width: 100%;          
           transition: none;
           &:hover{
             width: 100%;
+            transition: none;
           }
       }
     }
@@ -145,26 +148,30 @@
     .ServiciosBloque02{
       display: inline-block;
       .imagenModelado3d{
-        width: 110%;
+        display: flex;
+        width: 108%;
         margin-left: -5%;
+        
         &:hover{
-          width: 110%;
+          width: 108%;
           transition: none;
         }
+      }
         .bloqueModelado3d{
-          width: 100%;
+          
+          width: 90%;       
+          margin-left: 14%;
           
           .tituloModelado3d{
-            width: 100%;
+            width: 100%;          
+          
           }
           .textoModelado3d{
-            width: 100%;
-            padding-left: 4%;
+            width: 100%;           
           }
           .iconoFlecha5{            
           }
-        }
-      }
+        }      
     } 
     
     .ServicosBloque03{
@@ -182,13 +189,115 @@
         }
       }
       .imagenXbox{
+        display: flex;
         width: 100%;
         transition: none;
         &:hover{
           width: 100%;
+          transition: none;
         }
       }  
     }  
   
   }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1020px){
+  body{ 
+    width: 100%; 
+    .ServiciosBloque01{
+      display: flex;
+      .bloqueSuperior{
+        width:100%;
+        .tituloImagenCorporativa{
+
+        }
+        .textoImagenCorporativa{
+
+        }
+        .iconoFlecha2{
+
+        }       
+        }
+        .imagenCorporatica{
+          display: flex;
+          width: 40%;
+          height: 40%;
+          margin-top: 5%;
+          margin-left: 4%;          
+          transition: none;
+          &:hover{
+            width: 40%;
+          height: 40%;
+            transition: none;
+          }
+      }
+    }
+   
+    .ServiciosBloque02{
+      display: flex;
+      .imagenModelado3d{
+        display: flex;
+        width: 40%;
+        height: 40%;
+        margin-top: 5%;
+        margin-left: 4%;          
+        transition: none;
+        
+        &:hover{
+          width: 40%;
+          height: 40%;
+          transition: none;
+        }
+      }
+        .bloqueModelado3d{
+          
+          width: 90%;       
+          margin-left: 14%;
+          
+          .tituloModelado3d{
+            width: 100%;          
+          
+          }
+          .textoModelado3d{
+            width: 100%;           
+          }
+          .iconoFlecha5{            
+          }
+        }      
+    } 
+    
+    .ServicosBloque03{
+      display: flex;
+      margin-left: -11%;
+      .bloqueInferior{
+        width: 100%;
+        .tituloCreacionProyectos{
+
+        }
+        .textoCreacionProyectos{
+
+        }
+        .iconoFlecha4{
+
+        }
+      }
+      .imagenXbox{
+        display: flex;
+        width: 40%;
+        height: 40%;
+        margin-top: 5%;
+        margin-left: 4%;          
+        transition: none;
+        &:hover{
+          width: 40%;
+          height: 40%;
+          transition: none;
+        }
+      }  
+    }  
+  
+  }
+}
+  
   

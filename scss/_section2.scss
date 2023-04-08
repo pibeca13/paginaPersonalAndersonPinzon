@@ -25,6 +25,32 @@ main{
 
 }
 
+@media screen and (max-width: 500px){
+    main{
+        .tercerBloque{
+            .card{
+                .card-body2{
+                    .experienciaBtl{
+                        font-size: 90%;
+                    }
+                    .card-textBTL{
+                        font-size: 200%;
+                    }
+                    .acceso{
+                        .iconoFlecha3{
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+}
 
 
 

@@ -1,15 +1,22 @@
-.clientes{font-size: 30px;text-align: center;padding-top: 4%;line-height: normal;}
-.galeriaClientes{width: 90%;display: $contenedor-flex;margin: 4%;padding: 2%;}
-.galeria_img{width: 50%;display: $contenedor-flex;justify-content:$justify-center;padding: 10%;}
-
-.galeria_imagenes{
-    position:relative;
-    cursor:pointer;   
-    overflow: hidden;
-
-}
-.galeria_imagenes::before{
-    content:"";
+main{
+    .clientes{font-size: 30px;
+        text-align: center;
+        padding-top: 4%;line-height: normal;
+    }
+    .galeriaClientes1{
+        width: 90%;
+        display: $contenedor-flex;margin: 4%;
+        padding: 2%;
+        .galeriaImagenes1{
+            position:relative;
+            cursor:pointer;   
+            overflow: hidden;
+            &:hover::before{
+                transform: scaleY(1);
+        
+            }
+            &::before{
+                content:"DEAGEO-ECUACOR";
     position:absolute;
     top:0;
     bottom:0;
@@ -27,73 +34,791 @@
     justify-content: $justify-center;
     align-items:center ;
     font-size:1.5rem ;
-    
-}
-.galeria_imagenes:hover::before{
- 
-     transform: scaleY(1);
-
- 
-}
-
-.galeria_img{
-    width: 100%;
+   
+            }
+            .galeria_img1{
+                width: 50%;
+                display: $contenedor-flex;
+                justify-content:$justify-center;
+                padding: 10%;
+                
+                width: 100%;
     height: 100%;
     
     object-fit: cover;
+
+            }
+           
+
+        }
+
+    }    
+        .galeriaImagenes2{
+            position:relative;
+            cursor:pointer;   
+            overflow: hidden;
+            &:hover::before{
+                transform: scaleY(1);
+        
+            }
+            &::before{
+                content:"KOALA COLOMBIA";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(133, 133, 133, 0.842);
+    width: 100%; height: 100%;
+    padding: 10%;
+    
+ 
+    transform: scaleY(0);
+    transition: transform .4s;
+    color:$color-secundario;
+    display:$contenedor-flex;
+    justify-content: $justify-center;
+    align-items:center ;
+    font-size:1.5rem ;
+   
+            }
+            .galeria_img2{
+                width: 50%;
+                display: $contenedor-flex;
+                justify-content:$justify-center;
+                padding: 10%;
+                
+                width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+
+            }
+           
+
+        }    
+    
+        .galeriaImagenes3{
+            position:relative;
+            cursor:pointer;   
+            overflow: hidden;
+            &:hover::before{
+                transform: scaleY(1);
+        
+            }
+            &::before{
+                content:"FERRERO LATINO";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(133, 133, 133, 0.842);
+    width: 100%; height: 100%;
+    padding: 10%;
+    
+ 
+    transform: scaleY(0);
+    transition: transform .4s;
+    color:$color-secundario;
+    display:$contenedor-flex;
+    justify-content: $justify-center;
+    align-items:center ;
+    font-size:1.5rem ;
+   
+            }
+            .galeria_img3{
+                width: 50%;
+                display: $contenedor-flex;
+                justify-content:$justify-center;
+                padding: 10%;
+                
+                width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+
+            }           
+
+        }   
+    
+        .galeriaImagenes4{
+            position:relative;
+            cursor:pointer;   
+            overflow: hidden;
+            &:hover::before{
+                transform: scaleY(1);
+        
+            }
+            &::before{
+                content:"PLAY DOH SOMBRILLA";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(133, 133, 133, 0.842);
+    width: 100%; height: 100%;
+    padding: 10%;
+    
+ 
+    transform: scaleY(0);
+    transition: transform .4s;
+    color:$color-secundario;
+    display:$contenedor-flex;
+    justify-content: $justify-center;
+    align-items:center ;
+    font-size:1.5rem ;
+   
+            }
+            .galeria_img4{
+                width: 50%;
+                display: $contenedor-flex;
+                justify-content:$justify-center;
+                padding: 10%;
+                
+                width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+
+            }
+           
+
+        }
+        .galeriaClientes2{
+            width: 90%;
+            display: $contenedor-flex;margin: 4%;
+            padding: 2%;
+            .galeriaImagenes5{
+                position:relative;
+                cursor:pointer;   
+                overflow: hidden;
+                &:hover::before{
+                    transform: scaleY(1);
+            
+                }
+                &::before{
+                    content:"BIOMAX BOGOTA";
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background-color: rgba(133, 133, 133, 0.842);
+        width: 100%; height: 100%;
+        padding: 10%;
+        
+     
+        transform: scaleY(0);
+        transition: transform .4s;
+        color:$color-secundario;
+        display:$contenedor-flex;
+        justify-content: $justify-center;
+        align-items:center ;
+        font-size:1.5rem ;
+       
+                }
+                .galeria_img5{
+                    width: 50%;
+                    display: $contenedor-flex;
+                    justify-content:$justify-center;
+                    padding: 10%;
+                    
+                    width: 100%;
+        height: 100%;
+        
+        object-fit: cover;
+    
+                }
+               
+    
+            }
+    
+        }    
+            .galeriaImagenes6{
+                position:relative;
+                cursor:pointer;   
+                overflow: hidden;
+                &:hover::before{
+                    transform: scaleY(1);
+            
+                }
+                &::before{
+                    content:"MICROSOFT X-BOX";
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background-color: rgba(133, 133, 133, 0.842);
+        width: 100%; height: 100%;
+        padding: 10%;
+        
+     
+        transform: scaleY(0);
+        transition: transform .4s;
+        color:$color-secundario;
+        display:$contenedor-flex;
+        justify-content: $justify-center;
+        align-items:center ;
+        font-size:1.5rem ;
+       
+                }
+                .galeria_img6{
+                    width: 50%;
+                    display: $contenedor-flex;
+                    justify-content:$justify-center;
+                    padding: 10%;
+                    
+                    width: 100%;
+        height: 100%;
+        
+        object-fit: cover;
+    
+                }
+               
+    
+            }    
+        
+            .galeriaImagenes7{
+                position:relative;
+                cursor:pointer;   
+                overflow: hidden;
+                &:hover::before{
+                    transform: scaleY(1);
+            
+                }
+                &::before{
+                    content:"ADIDAS AMERICA";
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background-color: rgba(133, 133, 133, 0.842);
+        width: 100%; height: 100%;
+        padding: 10%;
+        
+     
+        transform: scaleY(0);
+        transition: transform .4s;
+        color:$color-secundario;
+        display:$contenedor-flex;
+        justify-content: $justify-center;
+        align-items:center ;
+        font-size:1.5rem ;
+       
+                }
+                .galeria_img7{
+                    width: 50%;
+                    display: $contenedor-flex;
+                    justify-content:$justify-center;
+                    padding: 10%;
+                    
+                    width: 100%;
+        height: 100%;
+        
+        object-fit: cover;
+    
+                }           
+    
+            }   
+        
+            .galeriaImagenes8{
+                position:relative;
+                cursor:pointer;   
+                overflow: hidden;
+                &:hover::before{
+                    transform: scaleY(1);
+            
+                }
+                &::before{
+                    content:"FALABELLA COLOMBIA";
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background-color: rgba(133, 133, 133, 0.842);
+        width: 100%; height: 100%;
+        padding: 10%;
+        
+     
+        transform: scaleY(0);
+        transition: transform .4s;
+        color:$color-secundario;
+        display:$contenedor-flex;
+        justify-content: $justify-center;
+        align-items:center ;
+        font-size:1.5rem ;
+       
+                }
+                .galeria_img8{
+                    width: 50%;
+                    display: $contenedor-flex;
+                    justify-content:$justify-center;
+                    padding: 10%;
+                    
+                    width: 100%;
+        height: 100%;
+        
+        object-fit: cover;
+    
+                }
+               
+    
+            }
+            .galeriaClientes3{
+                width: 90%;
+                display: $contenedor-flex;margin: 4%;
+                padding: 2%;
+                .galeriaImagenes9{
+                    position:relative;
+                    cursor:pointer;   
+                    overflow: hidden;
+                    &:hover::before{
+                        transform: scaleY(1);
+                
+                    }
+                    &::before{
+                        content:"NUTRESA";
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            background-color: rgba(133, 133, 133, 0.842);
+            width: 100%; height: 100%;
+            padding: 10%;
+            
+         
+            transform: scaleY(0);
+            transition: transform .4s;
+            color:$color-secundario;
+            display:$contenedor-flex;
+            justify-content: $justify-center;
+            align-items:center ;
+            font-size:1.5rem ;
+           
+                    }
+                    .galeria_img9{
+                        width: 50%;
+                        display: $contenedor-flex;
+                        justify-content:$justify-center;
+                        padding: 10%;
+                        
+                        width: 100%;
+            height: 100%;
+            
+            object-fit: cover;
+        
+                    }
+                   
+        
+                }
+        
+            }    
+                .galeriaImagenes10{
+                    position:relative;
+                    cursor:pointer;   
+                    overflow: hidden;
+                    &:hover::before{
+                        transform: scaleY(1);
+                
+                    }
+                    &::before{
+                        content:"HERO-SANCHO";
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            background-color: rgba(133, 133, 133, 0.842);
+            width: 100%; height: 100%;
+            padding: 10%;
+            
+         
+            transform: scaleY(0);
+            transition: transform .4s;
+            color:$color-secundario;
+            display:$contenedor-flex;
+            justify-content: $justify-center;
+            align-items:center ;
+            font-size:1.5rem ;
+           
+                    }
+                    .galeria_img10{
+                        width: 50%;
+                        display: $contenedor-flex;
+                        justify-content:$justify-center;
+                        padding: 10%;
+                        
+                        width: 100%;
+            height: 100%;
+            
+            object-fit: cover;
+        
+                    }
+                   
+        
+                }    
+            
+                .galeriaImagenes11{
+                    position:relative;
+                    cursor:pointer;   
+                    overflow: hidden;
+                    &:hover::before{
+                        transform: scaleY(1);
+                
+                    }
+                    &::before{
+                        content:"PHILIPS MORGAN";
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            background-color: rgba(133, 133, 133, 0.842);
+            width: 100%; height: 100%;
+            padding: 10%;
+            
+         
+            transform: scaleY(0);
+            transition: transform .4s;
+            color:$color-secundario;
+            display:$contenedor-flex;
+            justify-content: $justify-center;
+            align-items:center ;
+            font-size:1.5rem ;
+           
+                    }
+                    .galeria_img11{
+                        width: 50%;
+                        display: $contenedor-flex;
+                        justify-content:$justify-center;
+                        padding: 10%;
+                        
+                        width: 100%;
+            height: 100%;
+            
+            object-fit: cover;
+        
+                    }           
+        
+                }   
+            
+                .galeriaImagenes12{
+                    position:relative;
+                    cursor:pointer;   
+                    overflow: hidden;
+                    &:hover::before{
+                        transform: scaleY(1);
+                
+                    }
+                    &::before{
+                        content:"MATEL-MEXICO";
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            background-color: rgba(133, 133, 133, 0.842);
+            width: 100%; height: 100%;
+            padding: 10%;
+            
+         
+            transform: scaleY(0);
+            transition: transform .4s;
+            color:$color-secundario;
+            display:$contenedor-flex;
+            justify-content: $justify-center;
+            align-items:center ;
+            font-size:1.5rem ;
+           
+                    }
+                    .galeria_img12{
+                        width: 50%;
+                        display: $contenedor-flex;
+                        justify-content:$justify-center;
+                        padding: 10%;
+                        
+                        width: 100%;
+            height: 100%;
+            
+            object-fit: cover;
+        
+                    }
+                   
+        
+                }
+                .galeriaClientes4{
+                    width: 90%;
+                    display: $contenedor-flex;margin: 4%;
+                    padding: 2%;
+                    .galeriaImagenes13{
+                        position:relative;
+                        cursor:pointer;   
+                        overflow: hidden;
+                        &:hover::before{
+                            transform: scaleY(1);
+                    
+                        }
+                        &::before{
+                            content:"TERPEL-MEDELLIN";
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                background-color: rgba(133, 133, 133, 0.842);
+                width: 100%; height: 100%;
+                padding: 10%;
+                
+             
+                transform: scaleY(0);
+                transition: transform .4s;
+                color:$color-secundario;
+                display:$contenedor-flex;
+                justify-content: $justify-center;
+                align-items:center ;
+                font-size:1.5rem ;
+               
+                        }
+                        .galeria_img13{
+                            width: 50%;
+                            display: $contenedor-flex;
+                            justify-content:$justify-center;
+                            padding: 10%;
+                            
+                            width: 100%;
+                height: 100%;
+                
+                object-fit: cover;
+            
+                        }
+                       
+            
+                    }
+            
+                }    
+                    .galeriaImagenes14{
+                        position:relative;
+                        cursor:pointer;   
+                        overflow: hidden;
+                        &:hover::before{
+                            transform: scaleY(1);
+                    
+                        }
+                        &::before{
+                            content:"MARGARITA";
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                background-color: rgba(133, 133, 133, 0.842);
+                width: 100%; height: 100%;
+                padding: 10%;
+                
+             
+                transform: scaleY(0);
+                transition: transform .4s;
+                color:$color-secundario;
+                display:$contenedor-flex;
+                justify-content: $justify-center;
+                align-items:center ;
+                font-size:1.5rem ;
+               
+                        }
+                        .galeria_img14{
+                            width: 50%;
+                            display: $contenedor-flex;
+                            justify-content:$justify-center;
+                            padding: 10%;
+                            
+                            width: 100%;
+                height: 100%;
+                
+                object-fit: cover;
+            
+                        }
+                       
+            
+                    }    
+                
+                    .galeriaImagenes15{
+                        position:relative;
+                        cursor:pointer;   
+                        overflow: hidden;
+                        &:hover::before{
+                            transform: scaleY(1);
+                    
+                        }
+                        &::before{
+                            content:"PEPSI-REGIO";
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                background-color: rgba(133, 133, 133, 0.842);
+                width: 100%; height: 100%;
+                padding: 10%;
+                
+             
+                transform: scaleY(0);
+                transition: transform .4s;
+                color:$color-secundario;
+                display:$contenedor-flex;
+                justify-content: $justify-center;
+                align-items:center ;
+                font-size:1.5rem ;
+               
+                        }
+                        .galeria_img15{
+                            width: 50%;
+                            display: $contenedor-flex;
+                            justify-content:$justify-center;
+                            padding: 10%;
+                            
+                            width: 100%;
+                height: 100%;
+                
+                object-fit: cover;
+            
+                        }           
+            
+                    }   
+                
+                    .galeriaImagenes16{
+                        position:relative;
+                        cursor:pointer;   
+                        overflow: hidden;
+                        &:hover::before{
+                            transform: scaleY(1);
+                    
+                        }
+                        &::before{
+                            content:"UNILEVER-LATINOAMERICA";
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                background-color: rgba(133, 133, 133, 0.842);
+                width: 100%; height: 100%;
+                padding: 10%;
+                
+             
+                transform: scaleY(0);
+                transition: transform .4s;
+                color:$color-secundario;
+                display:$contenedor-flex;
+                justify-content: $justify-center;
+                align-items:center ;
+                font-size:1.5rem ;
+               
+                        }
+                        .galeria_img16{
+                            width: 50%;
+                            display: $contenedor-flex;
+                            justify-content:$justify-center;
+                            padding: 10%;
+                            
+                            width: 100%;
+                height: 100%;
+                
+                object-fit: cover;
+            
+                        }
+                       
+            
+                    }
+                
+            
+        
+    
+
 }
 
-.galeria_imagenes--g1::before{
-    content:"DEAGEO-ECUACOR";}
 
-
-.galeria_imagenes--g2::before{
-    content:"KOALA COLOMBIA";}
-
-.galeria_imagenes--g3::before{
-    content:"FERRERO LATINO";}
-
-.galeria_imagenes--g4::before{
-    content:"PLAY DOH SOMBRILLA";}
-
-.galeria_imagenes--g5::before{
-    content:"BIOMAX BOGOTA";}
-    
-.galeria_imagenes--g6::before{
-    content:"MICROSOFT X-BOX";}
- 
-.galeria_imagenes--g7::before{
-    content:"ADIDAS AMERICA";}
-    
-.galeria_imagenes--g8::before{
-    content:"FALABELLA COLOMBIA";}
-     
-.galeria_imagenes--g9::before{
-    content:"NUTRESA";}
-
-.galeria_imagenes--g10::before{
-    content:"HERO-SANCHO";}
-
-.galeria_imagenes--g11::before{
-    content:"PHILIPS MORGAN";}
-
-.galeria_imagenes--g12::before{
-    content:"MATEL-MEXICO";}
-
-.galeria_imagenes--g13::before{
-    content:"TERPEL-MEDELLIN";}
-
-.galeria_imagenes--g14::before{
-    content:"MARGARITA";}
-
-.galeria_imagenes--g15::before{
-    content:"PEPSI-REGION";}
-
-.galeria_imagenes--g16::before{
-    content:"UNILEVER-LATINOAMERICA";}
 
 @media screen and (max-width: 500px){
-    .galeriaClientes{width: 100%;display: grid;
-        grid-template-columns: 47% 47%;}
+    main{
+        .galeriaClientes1{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 47% 47%;
+            .galeriaImagenes1{
+                
+            }
+            .galeriaImagenes2{
+
+            }
+            .galeriaImagenes3{
+
+            }
+            .galeriaImagenes4{
+
+            }
+
+        }
+        .galeriaClientes2{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 47% 47%;
+            .galeriaImagenes5{
+                
+            }
+            .galeriaImagenes6{
+
+            }
+            .galeriaImagenes7{
+
+            }
+            .galeriaImagenes8{
+
+            }
+
+        }
+        .galeriaClientes3{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 47% 47%;
+            .galeriaImagenes9{
+                
+            }
+            .galeriaImagenes10{
+
+            }
+            .galeriaImagenes11{
+
+            }
+            .galeriaImagenes12{
+
+            }
+
+        }
+        .galeriaClientes4{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 47% 47%;
+            .galeriaImagenes13{
+                
+            }
+            .galeriaImagenes14{
+
+            }
+            .galeriaImagenes15{
+
+            }
+            .galeriaImagenes16{
+
+            }
+
+        }
     
-}   
+    }
+    
+}  

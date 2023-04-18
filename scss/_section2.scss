@@ -6,7 +6,7 @@ main{
             height: 50px;
         }
         .card-body2{
-            background-color: $color-quinto;
+            background-color: $color-primario;
             color: $color-secundario;
             padding: 4%;
             .experienciaBtl{
@@ -31,7 +31,7 @@ main{
             .card{
                 .card-body2{
                     .experienciaBtl{
-                        font-size: 90%;
+                        font-size: 120%;
                     }
                     .card-textBTL{
                         font-size: 200%;

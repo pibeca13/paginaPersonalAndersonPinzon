@@ -746,10 +746,14 @@ main{
 
 @media screen and (max-width: 500px){
     main{
+        .clientes{
+            padding: 5%;
+        }
         .galeriaClientes1{
-            width: 100%;
+            width: 90;
             display: grid;
             grid-template-columns: 47% 47%;
+            margin-left: 10%;
             .galeriaImagenes1{
                 
             }
@@ -765,9 +769,10 @@ main{
 
         }
         .galeriaClientes2{
-            width: 100%;
+            width: 90%;
             display: grid;
             grid-template-columns: 47% 47%;
+            margin-left: 10%;
             .galeriaImagenes5{
                 
             }
@@ -783,9 +788,10 @@ main{
 
         }
         .galeriaClientes3{
-            width: 100%;
+            width: 90%;
             display: grid;
             grid-template-columns: 47% 47%;
+            margin-left: 10%;
             .galeriaImagenes9{
                 
             }
@@ -801,9 +807,10 @@ main{
 
         }
         .galeriaClientes4{
-            width: 100%;
+            width: 90%;
             display: grid;
             grid-template-columns: 47% 47%;
+            margin-left: 10%;
             .galeriaImagenes13{
                 
             }

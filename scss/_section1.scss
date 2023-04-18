@@ -11,29 +11,56 @@ main{
                 font-family: 'Lato', sans-serif;
             }
         }
-        .card-img2{
-            display: $contenedor-flex;
-            width: 55%;margin-left: -55%;}
-    }
-    .titulo2{font-size: 50px;
-        padding: 5%;
-        .subtitulo2{
-            font-size: 25px;
-            line-height: 40px;
-            font-family: 'Lato', sans-serif;
+        .aimacionSuperior{
+            width: 50%;
+            margin-right: 0%;
+            overflow: hidden;
+            
+            .animacionSuperiorLista{
+                display: flex;                
+                width: 300%;
+                list-style: none;
+                
+                animation: animacionSuperior 20s infinite;               
+                
+                
+                .card-img2{
+                    width: 100%;
+                    display: $contenedor-flex;                    
+                    list-style: none;}
+            }
         }
+        
+    }
+    .bocetos{
+        display: flex;
+        padding: 5%;
+        .imagenBoceto{
+            width: 55%;
+            height: 10%;
+        }
+        .titulo2{font-size: 50px;
+            padding: 3%;
+            margin-left: 9%;
+            .subtitulo2{
+                font-size: 25px;
+                line-height: 40px;
+                font-family: 'Lato', sans-serif;
+            }        
+    }
+    
     }
     .franja{
-        background-color: $color-secundario;
+        background-color: $color-quinto;
         .cuerpo{
             display: $contenedor-flex;
-            width: 51%;height: auto;
-            text-align: center;color: $color-primario;
-            background-color: $color-secundario;
+            width: 50%;height: auto;
+            text-align: center;color: $color-secundario;
+            background-color: $color-quinto;
             .col-sm-6{
                 .card{
                     border: none;
-                    background-color: $color-secundario;
+                    background-color: $color-quinto;
                     height: 10%;margin-top: 3%;
                     .card-body{
                         margin-left: 15%;
@@ -51,7 +78,7 @@ main{
     .iconoFlecha{
         width: 10%;
          font-size: 60px;
-         color:$color-cuerto ;
+         color:$color-secundario ;
          &:hover{
             color:$color-rojo;
         }
@@ -80,28 +107,63 @@ main{
   
     
 }
+
+@keyframes animacionSuperior{
+    0% {margin-left: 0; }  
+    20% {margin-left: 0; }
+    
+    25% {margin-left: -100%; }  
+    45% {margin-left: -100%; } 
+
+    50% {margin-left: -200%; }  
+    100% {margin-left: -200%; }   
+     
+    
+}
+
+
 @media screen and (max-width: 500px){
     main{
         .encabezado{
             display: block;
             .titulo{
                 font-size: 70px;
-                width: 100%;               
+                width: 100%;
+                text-align: center;               
                 .subtitulo{
 
                 }
 
             }
-            .card-img2{
-                display: block;width: 155%;
-            }            
-        }
-        .titulo2{
-            .subtitulo2{
-
+            .aimacionSuperior{
+                width: 105%;
+                margin-left: -5%;
+                .animacionSuperiorLista{
+                    .card-img2{
+                        display: block;
+                        width: 155%;
+                    }
+                }
             }
-
+                        
         }
+        .bocetos{
+            display: inline-block;
+            width: 100%;
+            .imagenBoceto{
+                width: 100%;
+                padding: 5%;
+                
+            }
+            .titulo2{
+                text-align: center;
+                margin-left: 2%;
+                .subtitulo2{
+    
+                }
+    
+            }
+        }       
         .franja{
             .cuerpo{
                 display: block;
@@ -145,16 +207,35 @@ main{
                 }
 
             }
-            .card-img2{
-                display: block;width: 155%;
-            }            
-        }
-        .titulo2{
-            .subtitulo2{
+            .aimacionSuperior{
+                width: 100%;
+                .animacionSuperiorLista{
+                    .card-img2{
+                        display: block;
+                        width: 100%;
+                    }
+                }
 
             }
-
+            
+                        
         }
+        .bocetos{
+            display: inline-block;
+            width: 100%;
+            .imagenBoceto{
+                width: 100%;
+                padding: 5%;
+                
+            }
+            .titulo2{
+                .subtitulo2{
+    
+                }
+    
+            }
+        }       
+      
         .franja{ 
                               
             

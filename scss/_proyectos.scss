@@ -42,6 +42,10 @@ main{
 
 @media screen and (max-width: 500px){
     main{
+        .proyectos{
+            padding: 5%;
+            text-align: center;
+        }        
         .proyectosImagenes{
         display: inline-block;
         width:96%;        
@@ -88,6 +92,10 @@ main{
 
 @media screen and (min-width: 750px) and (max-width: 1020px){
     main{
+        .proyectos{
+            padding: 3%;
+            text-align: center;
+        }
         .proyectosImagenes{
         display: inline-block;
         width:44%;        

@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url(../IMG/fondo5.jpg);
+  background: url(../img/prueba1.jpg);
   background-repeat: no-repeat;
   width: 100%;
 }
@@ -56,34 +56,54 @@ main .encabezado .titulo .subtitulo {
   line-height: 40px;
   font-family: "Lato", sans-serif;
 }
-main .encabezado .card-img2 {
-  display: flex;
-  width: 55%;
-  margin-left: -55%;
+main .encabezado .aimacionSuperior {
+  width: 50%;
+  margin-right: 0%;
+  overflow: hidden;
 }
-main .titulo2 {
-  font-size: 50px;
+main .encabezado .aimacionSuperior .animacionSuperiorLista {
+  display: flex;
+  width: 300%;
+  list-style: none;
+  animation: animacionSuperior 20s infinite;
+}
+main .encabezado .aimacionSuperior .animacionSuperiorLista .card-img2 {
+  width: 100%;
+  display: flex;
+  list-style: none;
+}
+main .bocetos {
+  display: flex;
   padding: 5%;
 }
-main .titulo2 .subtitulo2 {
+main .bocetos .imagenBoceto {
+  width: 55%;
+  height: 10%;
+}
+main .bocetos .titulo2 {
+  font-size: 50px;
+  padding: 3%;
+  margin-left: 9%;
+}
+main .bocetos .titulo2 .subtitulo2 {
   font-size: 25px;
   line-height: 40px;
   font-family: "Lato", sans-serif;
 }
 main .franja {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(73, 73, 73);
 }
 main .franja .cuerpo {
   display: flex;
-  width: 51%;
+  width: 50%;
   height: auto;
   text-align: center;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: rgb(73, 73, 73);
 }
 main .franja .cuerpo .col-sm-6 .card {
   border: none;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(73, 73, 73);
   height: 10%;
   margin-top: 3%;
 }
@@ -98,7 +118,7 @@ main .franja .cuerpo .col-sm-6 .card .card-body .card-title {
 main .iconoFlecha {
   width: 10%;
   font-size: 60px;
-  color: rgb(133, 133, 133);
+  color: rgb(255, 255, 255);
 }
 main .iconoFlecha:hover {
   color: crimson;
@@ -125,6 +145,26 @@ main .cardDesarrollo .card-textF {
   font-size: 17px;
 }
 
+@keyframes animacionSuperior {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
 @media screen and (max-width: 500px) {
   main .encabezado {
     display: block;
@@ -132,10 +172,27 @@ main .cardDesarrollo .card-textF {
   main .encabezado .titulo {
     font-size: 70px;
     width: 100%;
+    text-align: center;
   }
-  main .encabezado .card-img2 {
+  main .encabezado .aimacionSuperior {
+    width: 105%;
+    margin-left: -5%;
+  }
+  main .encabezado .aimacionSuperior .animacionSuperiorLista .card-img2 {
     display: block;
     width: 155%;
+  }
+  main .bocetos {
+    display: inline-block;
+    width: 100%;
+  }
+  main .bocetos .imagenBoceto {
+    width: 100%;
+    padding: 5%;
+  }
+  main .bocetos .titulo2 {
+    text-align: center;
+    margin-left: 2%;
   }
   main .franja .cuerpo {
     display: block;
@@ -151,9 +208,20 @@ main .cardDesarrollo .card-textF {
     font-size: 70px;
     width: 100%;
   }
-  main .encabezado .card-img2 {
+  main .encabezado .aimacionSuperior {
+    width: 100%;
+  }
+  main .encabezado .aimacionSuperior .animacionSuperiorLista .card-img2 {
     display: block;
-    width: 155%;
+    width: 100%;
+  }
+  main .bocetos {
+    display: inline-block;
+    width: 100%;
+  }
+  main .bocetos .imagenBoceto {
+    width: 100%;
+    padding: 5%;
   }
   main .franja .cuerpo {
     width: 100%;
@@ -176,7 +244,7 @@ main .tercerBloque .card-header {
   height: 50px;
 }
 main .tercerBloque .card-body2 {
-  background-color: rgb(73, 73, 73);
+  background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   padding: 4%;
 }
@@ -194,7 +262,7 @@ main .tercerBloque .card-body2 .acceso {
 
 @media screen and (max-width: 500px) {
   main .tercerBloque .card .card-body2 .experienciaBtl {
-    font-size: 90%;
+    font-size: 120%;
   }
   main .tercerBloque .card .card-body2 .card-textBTL {
     font-size: 200%;
@@ -273,6 +341,9 @@ main .tercerBloque .card-body2 .acceso {
 }
 
 @media screen and (max-width: 500px) {
+  .pieDepagina {
+    margin-left: 6%;
+  }
   .pieDepagina .cierre .logoinferior {
     display: none;
   }
@@ -280,6 +351,9 @@ main .tercerBloque .card-body2 .acceso {
     display: flex;
     width: 100%;
     margin-left: 7%;
+  }
+  .pieDepagina .cierre .nav .nav-item4 {
+    padding: 3%;
   }
   .pieDepagina .cierre .nav .nav-item4 .nav-link2 {
     font-size: 20px;
@@ -311,7 +385,7 @@ main .tercerBloque .card-body2 .acceso {
     font-size: 20px;
   }
   .pieDepagina .cierre .nav .nav-item4 .nav-link {
-    font-size: 20px;
+    display: none;
   }
   .pieDepagina .cierre .redesSociales {
     display: flex;
@@ -366,6 +440,10 @@ main .proyectosImagenes2 .slide .carousel-inner .carousel-item {
 }
 
 @media screen and (max-width: 500px) {
+  main .proyectos {
+    padding: 5%;
+    text-align: center;
+  }
   main .proyectosImagenes {
     display: inline-block;
     width: 96%;
@@ -400,6 +478,10 @@ main .proyectosImagenes2 .slide .carousel-inner .carousel-item {
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1020px) {
+  main .proyectos {
+    padding: 3%;
+    text-align: center;
+  }
   main .proyectosImagenes {
     display: inline-block;
     width: 44%;
@@ -439,6 +521,7 @@ main .encabezadoContactos .parrafoContactos {
 main .encabezadoContactos .imagenPersonal {
   width: 30rem;
   padding-left: 20%;
+  transition: all 1s;
 }
 main .seccionMediaContacto {
   background-color: rgb(133, 133, 133);
@@ -462,7 +545,21 @@ main .seccionMediaContacto .formularios {
   width: 40%;
   padding-right: 10%;
 }
-main .seccionMediaContacto .botonEnviar .btn-dark {
+main .seccionMediaContacto .formularios .botones {
+  display: flex;
+  margin-left: 35%;
+}
+main .seccionMediaContacto .formularios .botones .botonEnviar {
+  padding-right: 4%;
+}
+main .seccionMediaContacto .formularios .botones .botonEnviar .btn-dark {
+  background-color: rgb(133, 133, 133);
+  justify-content: center;
+}
+main .seccionMediaContacto .formularios .botones .botonReset {
+  padding-right: 4%;
+}
+main .seccionMediaContacto .formularios .botones .botonReset .btn-dark {
   background-color: rgb(133, 133, 133);
   justify-content: center;
 }
@@ -474,7 +571,9 @@ main .mapa {
 
 @media screen and (max-width: 500px) {
   main .tituloContactos {
-    padding-left: 20%;
+    font-size: 50px;
+    margin-left: -7%;
+    text-align: center;
   }
   main .encabezadoContactos {
     display: inline;
@@ -508,7 +607,7 @@ main .mapa {
     padding-left: 42%;
   }
   main .seccionMediaContacto .formularios .botonEnviar {
-    padding-left: 41%;
+    margin-left: -10%;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1020px) {
@@ -548,7 +647,7 @@ main .mapa {
     padding-left: 42%;
   }
   main .seccionMediaContacto .formularios .botonEnviar {
-    padding-left: 41%;
+    padding-left: 0%;
   }
 }
 main .clientes {
@@ -1175,25 +1274,32 @@ main .galeriaImagenes16 .galeria_img16 {
 }
 
 @media screen and (max-width: 500px) {
+  main .clientes {
+    padding: 5%;
+  }
   main .galeriaClientes1 {
-    width: 100%;
+    width: 90;
     display: grid;
     grid-template-columns: 47% 47%;
+    margin-left: 10%;
   }
   main .galeriaClientes2 {
-    width: 100%;
+    width: 90%;
     display: grid;
     grid-template-columns: 47% 47%;
+    margin-left: 10%;
   }
   main .galeriaClientes3 {
-    width: 100%;
+    width: 90%;
     display: grid;
     grid-template-columns: 47% 47%;
+    margin-left: 10%;
   }
   main .galeriaClientes4 {
-    width: 100%;
+    width: 90%;
     display: grid;
     grid-template-columns: 47% 47%;
+    margin-left: 10%;
   }
 }
 .ServiciosBloque01 {
@@ -1230,8 +1336,8 @@ main .galeriaImagenes16 .galeria_img16 {
   transition: all 1s;
 }
 .ServiciosBloque01 .imagenCorporatica:hover {
-  width: 20%;
   transition: all 1s;
+  transform: scale(133%);
 }
 
 .ServiciosBloque02 {
@@ -1244,10 +1350,11 @@ main .galeriaImagenes16 .galeria_img16 {
   width: 20%;
   margin-left: 25%;
   height: 25%;
+  transition: all 1s;
 }
 .ServiciosBloque02 .imagenModelado3d:hover {
-  width: 25%;
   transition: all 1s;
+  transform: scale(133%);
 }
 .ServiciosBloque02 .bloqueModelado3d {
   padding-top: 4%;
@@ -1307,10 +1414,11 @@ main .galeriaImagenes16 .galeria_img16 {
   width: 15%;
   padding-top: 4%;
   margin-right: 25%;
+  transition: all 1s;
 }
 .ServicosBloque03 .imagenXbox:hover {
-  width: 20%;
   transition: all 1s;
+  transform: scale(133%);
 }
 
 @media screen and (max-width: 500px) {
@@ -1321,6 +1429,7 @@ main .galeriaImagenes16 .galeria_img16 {
     display: inline-block;
   }
   body .ServiciosBloque01 .bloqueSuperior {
+    margin-left: -6%;
     width: 100%;
   }
   body .ServiciosBloque01 .imagenCorporatica {
@@ -1331,6 +1440,7 @@ main .galeriaImagenes16 .galeria_img16 {
   body .ServiciosBloque01 .imagenCorporatica:hover {
     width: 100%;
     transition: none;
+    transform: none;
   }
   body .ServiciosBloque02 {
     display: inline-block;
@@ -1343,6 +1453,7 @@ main .galeriaImagenes16 .galeria_img16 {
   body .ServiciosBloque02 .imagenModelado3d:hover {
     width: 108%;
     transition: none;
+    transform: none;
   }
   body .ServiciosBloque02 .bloqueModelado3d {
     width: 90%;
@@ -1359,6 +1470,7 @@ main .galeriaImagenes16 .galeria_img16 {
   }
   body .ServicosBloque03 .bloqueInferior {
     width: 100%;
+    margin-left: -6%;
   }
   body .ServicosBloque03 .imagenXbox {
     display: flex;
@@ -1368,6 +1480,7 @@ main .galeriaImagenes16 .galeria_img16 {
   body .ServicosBloque03 .imagenXbox:hover {
     width: 100%;
     transition: none;
+    transform: none;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1020px) {
@@ -1392,6 +1505,7 @@ main .galeriaImagenes16 .galeria_img16 {
     width: 40%;
     height: 40%;
     transition: none;
+    transform: scale(110%);
   }
   body .ServiciosBloque02 {
     display: flex;
@@ -1408,6 +1522,7 @@ main .galeriaImagenes16 .galeria_img16 {
     width: 40%;
     height: 40%;
     transition: none;
+    transform: scale(110%);
   }
   body .ServiciosBloque02 .bloqueModelado3d {
     width: 90%;
@@ -1438,5 +1553,70 @@ main .galeriaImagenes16 .galeria_img16 {
     width: 40%;
     height: 40%;
     transition: none;
+    transform: scale(110%);
+  }
+}
+main {
+  width: 100%;
+}
+main .imagen404 .imagenBoceto {
+  width: 50%;
+  margin-left: 23%;
+}
+main .texto404 {
+  font-size: 40px;
+  margin-left: 37%;
+}
+main .subtexto404 {
+  font-size: 30px;
+  margin-left: 29%;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    display: inline-block;
+    width: 100%;
+  }
+  main .imagen404 {
+    width: 100%;
+  }
+  main .imagen404 .imagenBoceto {
+    width: 100%;
+    margin-left: 0%;
+  }
+  main .texto404 {
+    font-size: 30px;
+    margin: 2%;
+    text-align: center;
+  }
+  main .subtexto404 {
+    width: 80%;
+    font-size: 25px;
+    margin-left: 10%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1020px) {
+  main {
+    display: inline-block;
+    width: 100%;
+  }
+  main .imagen404 {
+    width: 100%;
+  }
+  main .imagen404 .imagenBoceto {
+    width: 100%;
+    margin-left: 0%;
+  }
+  main .texto404 {
+    font-size: 45px;
+    margin-left: 6%;
+    text-align: center;
+  }
+  main .subtexto404 {
+    width: 80%;
+    font-size: 35px;
+    margin-left: 13%;
+    text-align: center;
   }
 }/*# sourceMappingURL=estilos.css.map */

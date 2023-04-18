@@ -61,6 +61,7 @@
 
 @media screen and (max-width: 500px){
     .pieDepagina{
+        margin-left: 6%;
         .cierre{
             .logoinferior{
                 display: none;
@@ -69,14 +70,15 @@
             .nav{
                 display: flex;
                 width: 100%;
-                margin-left: 7%;              
-                .nav-item4{                                                                                                                  
+                margin-left: 7%;                            
+                .nav-item4{ 
+                    padding: 3%;                                                                                                                 
                     .nav-link2{
-                        font-size: 20px;                                                              
+                        font-size: 20px;                                                            
                                                                                            
                     }
                     .nav-link{
-                        font-size: 20px; 
+                        font-size: 20px;
 
                     }
 
@@ -117,7 +119,7 @@
                                                                                            
                     }
                     .nav-link{
-                        font-size: 20px; 
+                        display: none; 
 
                     }
 

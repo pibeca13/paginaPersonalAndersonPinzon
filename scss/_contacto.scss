@@ -17,6 +17,7 @@ main{
 .imagenPersonal{
     width: 30rem;
     padding-left: 20%;
+    transition: all 1s;    
 }
         }
 
@@ -36,16 +37,28 @@ main{
                 }
             }
             .formularios{width: 40%;
-                padding-right: 10%
-                ;}
-                .botonEnviar{
-                    .btn-dark{
-                        background-color:$color-cuerto;
-                        justify-content: $justify-center;
+                padding-right: 10%;
+                .botones{
+                    display: flex;
+                    margin-left: 35%;
+                    .botonEnviar{
+                        padding-right: 4%;
+                        .btn-dark{
+                            background-color:$color-cuerto;
+                            justify-content: $justify-center;                        
+                        }
+                    }
+                    .botonReset{
+                        padding-right: 4%;
+                        .btn-dark{
+                            background-color:$color-cuerto;
+                            justify-content: $justify-center;
+                        }
                     }
 
-
-                }
+                }           
+                
+            }
         }        
         
         .mapa{
@@ -59,7 +72,9 @@ main{
 @media screen and (max-width: 500px){
     main{
         .tituloContactos{
-            padding-left: 20%;
+            font-size: 50px;
+            margin-left: -7%;
+            text-align: center;
         }
         .encabezadoContactos{
             display: inline;
@@ -97,7 +112,7 @@ main{
 
                 }
                 .botonEnviar{
-                    padding-left: 41%;
+                    margin-left: -10%;
                 }
             }
         }
@@ -156,7 +171,7 @@ main{
 
                 }
                 .botonEnviar{
-                    padding-left: 41%;
+                    padding-left: 0%;
                 }
             }
         }
